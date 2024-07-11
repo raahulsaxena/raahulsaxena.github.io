@@ -13,6 +13,9 @@ Hi! I'm Rahul, a Graduate CS student at the Manning College of Information & Com
 
 My work and interests lie at the intersection of Computer Vision, Natural Language Processing and Machine Learning.
 
+I am a Computer Vision engineer, ML enthusiast, and a software engineer with 4+ years of corporate experience. My interests include Object Detection, Instance Segmentation, Image Classification, Generative Adverserial Networks, and Vision Transformers.
+
+
 ## My work and research
 These days, my work is majorly focused on my areas of interest. I have been working on projects related to Computer Vision and NLP areas.
 
