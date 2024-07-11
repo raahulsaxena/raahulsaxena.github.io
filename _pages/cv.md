@@ -11,35 +11,36 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Computer Science, University of Massachusetts Amherst, 2025 (Expected)
+* B.E. in Electrical Engineering, BITS Pilani, 2019
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* May 2020 - July 2023: Software Engineer II (Data Analysis) at Philips
+  * Reduced the post release defects by 28% as a verification lead for the Ultrasound Eye Analytics Platform.
+  * Developed the translator microservice using Flask to reduce the turnaround time to < 2ms for cached translations.
+  * Migrated 3 analytical dashboards from on-prem servers to AWS Cloud, reducing manual deployment efforts by 75%.
+  * Improved the reliability of MR Software releases - R11 and R12 by owning the MEBEF Inhouse Dashboard.
+  * Achieved an automation rate of 85.7% for a data processing pipeline for the service calls analytics using Talend.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* July, 2019 - April, 2020: Software Engineer I at Philips
+  * Upskilled in Erlang and resolved the bugs in the data manager module of PerformanceBridge developer platform.
+  * Developed a bulk import feature for the service tools application by utilizing Ruby on Rails framework.
+  * Team: Enterprise Operational Informatics (formerly known as Radiology Solutions)
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* July, 2018 - Dec, 2018: Software Engineer Intern at PayPal
+  * Developed an auto-remediation framework called Optimus to resolve the failures dealt by the Core Data Operations.
+  * Created a full-stack web application using Spring framework to monitor Hadoop, RabbitMQ and Spark failures.
+  * Automated the standard operating procedures for remediation of Hadoop failures using expect script.
+  * Supervisor: Afroz Ahmed
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages: Python, Java, C, C++, HTML/CSS (Frontend), JavaScript(Backend), SQL
+* Libraries: PyTorch, TensorFlow, Scikit-learn, OpenCV
+* Technologies/Frameworks: Flask, Spring, Node.js, ExpressJS (MERN)
+* DevOps: Git, GitHub (CI/CD), Talend, Jenkins 
+* Databases: MongoDB, Vertica, MySQL, PostgreSQL
 
 Publications
 ======
