@@ -1,5 +1,5 @@
 ---
-title: 'Curated Dynamic Programming Leetcode Guide'
+title: 'Curated Dynamic Programming Problems'
 date: 2024-07-11
 permalink: /posts/2024/07/dynamic-programming-guide/
 tags:
