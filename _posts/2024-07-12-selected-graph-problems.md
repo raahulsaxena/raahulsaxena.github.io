@@ -1,6 +1,5 @@
-
 ---
-title: 'Curated Graphs Leetcode Guide'
+title: 'Curated Graphs Problems'
 date: 2024-07-12
 permalink: /posts/2024/07/graphs-guide/
 tags:

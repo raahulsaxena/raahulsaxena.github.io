@@ -1,9 +1,5 @@
-
-
-
-
 ---
-title: 'Curated Binary Tree Leetcode Guide'
+title: 'Curated Binary Tree Problems'
 date: 2024-07-12
 permalink: /posts/2024/07/binary-tree-guide/
 tags:
