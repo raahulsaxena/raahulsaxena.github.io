@@ -13,6 +13,7 @@ paperurl: 'http://raahulsaxena.github.io/files/cs670-report.pdf'
 
 **Authors:** Vinitra Muralikrishnan, Rahul Saxena, Mustafa Chasmai  <br>
 **Institution:** UMass Amherst
+[GitHub Link](https://github.com/raahulsaxena/advanced-camouflage-detection)
 
 ## Abstract
 
