@@ -1,5 +1,5 @@
 ---
-title: 'Mastering Graph Problems: A Comprehensive Guide'
+title: 'Graphs: A Comprehensive Guide'
 date: 2024-07-12
 permalink: /posts/2024/08/graph-problems-guide/
 tags:
@@ -8,7 +8,6 @@ tags:
   - leetcode
 ---
 
-# Mastering Graph Problems: A Comprehensive Guide
 Graph problems are a fundamental part of computer science and are frequently encountered in competitive programming and technical interviews. They require a good understanding of graph theory and the ability to recognize various problem patterns. In this post, we'll explore different types of graph problems, the patterns they follow, and some example problems to practice.
 
 ### Important Sub-topics
@@ -314,9 +313,8 @@ void topologicalSort(const std::vector<std::vector<int>>& graph) {
 ```
 
 
-## Additional Algorithms (Optional reading)
+## Additional Algorithms (Optional)
 
----
 
 ## Floyd Warshall
 

@@ -1,5 +1,5 @@
 ---
-title: 'Leetcode Coding Patterns'
+title: 'Coding Patterns: A Comprehensive Guide'
 date: 2024-07-12
 permalink: /posts/2024/07/leetcode-patterns/
 tags:
