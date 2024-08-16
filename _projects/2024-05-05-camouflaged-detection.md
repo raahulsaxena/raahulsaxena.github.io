@@ -1,13 +1,14 @@
 ---
 title: "Camouflaged Object Detection in Limited Data Setting"
 collection: projects
-permalink: /project/2024-05-05-camouflaged-detection
+category: 
+permalink: /projects/2024-05-05-camouflaged-detection
 excerpt: 'Our project has explored ways to improve camouflaged object segmentation performance in a limited data setting.'
 date: 2024-05-05
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
+# venue: 'Journal 1'
+# slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://raahulsaxena.github.io/files/cs670-report.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+# citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
 Advanced Camouflaged Object Detection in Limited Data Setting.
