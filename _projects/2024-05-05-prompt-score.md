@@ -11,8 +11,11 @@ paperurl: 'http://raahulsaxena.github.io/files/cs685-report.pdf'
 # citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
-**Authors:** Amritansh Mishra, Rahul Saxena, Manish Ranjan Karna, Manas Wadhwa 
-**Institution:** UMass Amherst
+
+**Authors:** Amritansh Mishra, Rahul Saxena, Manish Ranjan Karna, Manas Wadhwa <br>
+**Institution:** UMass Amherst <br>
+[GitHub Link](https://github.com/raahulsaxena/prompt_score)
+
 
 ## Abstract
 

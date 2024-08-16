@@ -11,8 +11,9 @@ paperurl: 'http://raahulsaxena.github.io/files/cs670-report.pdf'
 # citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
-**Authors:** Vinitra Muralikrishnan, Rahul Saxena, Mustafa Chasmai  
-**Institution:** UMass Amherst
+**Authors:** Vinitra Muralikrishnan, Rahul Saxena, Mustafa Chasmai  <br>
+**Institution:** UMass Amherst <br>
+[GitHub Link](https://github.com/raahulsaxena/advanced-camouflage-detection)
 
 ## Abstract
 
