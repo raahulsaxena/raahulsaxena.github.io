@@ -8,7 +8,7 @@ date: 2023-12-10
 location: "Amherst, Massachusetts"
 ---
 
-
+**Course Overview:**  
 **COMPSCI 532: Systems for Data Science** is a 3-credit course designed to provide students with a deep understanding of the systems and infrastructures that underpin large-scale data science. The course focuses on the principles and challenges associated with scaling computational processes both vertically (to many processors) and horizontally (to many nodes), enabling efficient and fast analyses of large datasets.
 
 
@@ -53,6 +53,3 @@ I completed **COMPSCI 532: Systems for Data Science** with an **A Grade (4.0/4.0
 
 COMPSCI 532 was an eye-opening course that deepened my knowledge of the systems and technologies that make large-scale data analysis possible. The combination of theoretical foundations and practical experience with tools like Hadoop and Spark provided me with a robust skill set that I am eager to apply in my future data science endeavors.
 
----
-
-This blog post offers a detailed overview of the course "COMPSCI 532: Systems for Data Science," highlighting your academic achievements and the comprehensive content covered. It serves as a strong addition to your portfolio, demonstrating your expertise in large-scale data systems.

@@ -9,11 +9,8 @@ location: "Amherst, Massachusetts"
 ---
 
 
-
+**Course Overview:**  
 **COMPSCI 682** is a 3-credit course focused on modern and practical methods for deep learning. The course began with an introduction to simple classifiers such as perceptrons and logistic regression and progressively moved into more complex topics, including standard neural networks, convolutional neural networks, and elements of recurrent neural networks and transformers. While the course provided a strong emphasis on practical applications, it maintained a solid foundation in the fundamentals of deep learning.
-
-## COMPSCI 682: Neural Networks - A Modern Introduction - A Grade (4.0/4.0)
-
 
 The primary focus was on computer vision applications, but the course also explored aspects of natural language processing (NLP). The programming components were heavily based on Python and its associated packages, such as Numpy and PyTorch, making it essential for students to have a strong background in Linear Algebra, Probability and Statistics, and Multivariate Calculus, along with proficiency in Python.
 
@@ -65,7 +62,3 @@ I completed this course with an **A Grade (4.0/4.0)**, demonstrating a deep unde
 ### Final Thoughts
 
 **COMPSCI 682** was a transformative experience that provided me with a strong foundation in deep learning and its applications. The combination of rigorous coursework, insightful lectures, and hands-on assignments equipped me with the skills and knowledge needed to tackle complex problems in the field of machine learning.
-
----
-
-This blog post highlights the comprehensive and advanced nature of the course, showcasing your achievements and the depth of content covered. It serves as a valuable addition to your portfolio, reflecting your expertise in modern neural networks and deep learning techniques.
