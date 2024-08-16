@@ -4,11 +4,10 @@ collection: academics
 type: "academics"
 permalink: /academics/2024-spring-computer-vision
 venue: "University of Massachusetts Amherst, CICS"
-date: 2024-02-05
+date: 2024-05-17
 location: "Amherst, Massachusetts"
 ---
 
-## COMPSCI 670: Advanced Computer Vision - A Grade (4.0/4.0)
 **Course Overview:**  
 This graduate-level course delves into the sophisticated techniques for analyzing visual data, particularly color images. The course is structured in two key parts:
 
@@ -40,6 +39,3 @@ I completed this challenging course with a perfect score of **A (4.0/4.0)**, ref
 **Instructor:**  
 The course was taught by [Grant Van Horn](mailto:gvanhorn@umass.edu), a renowned expert in the field, who provided invaluable insights into both classical and modern techniques in computer vision.
 
----
-
-This content showcases my mastery of advanced computer vision concepts and highlights the rigorous coursework and projects I completed as part of this course.

@@ -4,14 +4,13 @@ collection: academics
 type: "academics"
 permalink: /academics/2024-spring-advanced-nlp
 venue: "University of Massachusetts Amherst, CICS"
-date: 2024-02-05
+date: 2024-05-17
 location: "Amherst, Massachusetts"
 ---
 
-
+**Course Overview:**  
 Natural Language Processing (NLP) is both an engineering art and a science, focused on teaching computers to understand human language. As a subset of artificial intelligence, NLP has become ubiquitous, powering voice assistants, web-based question answering, discussion analysis in social media, and even human language translation. The complexity of language—rich in nuances and ambiguity—makes it challenging for computers to understand, but through the application of data, mathematics, and linguistic insights, these engineering problems can be tackled.
 
-## COMPSCI 685: Advanced Natural Language Processing (NLP) - A Grade (4.0/4.0)
 
 **Course Content:**  
 This course provided a deep dive into the latest deep learning methods for NLP, with a strong focus on large language models. Throughout the semester, we concentrated on neural language models and transfer learning techniques that have significantly advanced the state of the art in NLP.
