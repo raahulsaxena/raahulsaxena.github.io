@@ -234,19 +234,19 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _academics
   - scope:
       path: ""
-      type: teaching
+      type: academics
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _projects
   - scope:
       path: ""
-      type: publications
+      type: projects
     values:
       layout: single
       author_profile: true

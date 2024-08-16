@@ -9,7 +9,7 @@ location: "Amherst, Massachusetts"
 ---
 
 
-## Advanced Natural Language Processing (NLP) - A Grade
+## COMPSCI 685: Advanced Natural Language Processing (NLP) - A Grade (4.0/4.0)
 
 **Course Overview:**  
 Natural Language Processing (NLP) is both an engineering art and a science, focused on teaching computers to understand human language. As a subset of artificial intelligence, NLP has become ubiquitous, powering voice assistants, web-based question answering, discussion analysis in social media, and even human language translation. The complexity of language—rich in nuances and ambiguity—makes it challenging for computers to understand, but through the application of data, mathematics, and linguistic insights, these engineering problems can be tackled.
