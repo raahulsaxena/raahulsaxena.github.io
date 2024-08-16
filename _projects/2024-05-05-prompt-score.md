@@ -13,8 +13,7 @@ paperurl: 'http://raahulsaxena.github.io/files/cs685-report.pdf'
 
 
 **Authors:** Amritansh Mishra, Rahul Saxena, Manish Ranjan Karna, Manas Wadhwa <br>
-**Institution:** UMass Amherst
-
+**Institution:** UMass Amherst <br>
 [GitHub Link](https://github.com/raahulsaxena/prompt_score)
 
 

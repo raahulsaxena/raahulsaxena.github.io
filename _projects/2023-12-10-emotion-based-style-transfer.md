@@ -13,7 +13,7 @@ paperurl: 'http://raahulsaxena.github.io/files/cs682-report.pdf'
 
 
 **Authors:** Dishant Padalia, Rahul Saxena <br>
-**Institution:** UMass Amherst
+**Institution:** UMass Amherst <br>
 [GitHub Link](https://github.com/raahulsaxena/emotion-based-style-transfer)
 
 ## Abstract
