@@ -1,5 +1,5 @@
 ---
-title: "CS 670: Computer Vision"
+title: "COMPSCI 670: Computer Vision (Grade: A)"
 collection: academics
 type: "academics"
 permalink: /academics/2024-spring-computer-vision
@@ -9,7 +9,6 @@ location: "Amherst, Massachusetts"
 ---
 
 ## COMPSCI 670: Advanced Computer Vision - A Grade (4.0/4.0)
-
 **Course Overview:**  
 This graduate-level course delves into the sophisticated techniques for analyzing visual data, particularly color images. The course is structured in two key parts:
 
