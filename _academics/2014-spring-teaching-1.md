@@ -1,14 +1,16 @@
 ---
-title: "Academics experience 1"
+title: "Computer Vision"
 collection: academics
-type: "Undergraduate course"
-permalink: /academics/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "PhD Level Course"
+permalink: /academics/2024-spring-computer-vision
+venue: "University of Massachusetts Amherst, CICS"
+date: 2024-02-05
+location: "Amherst, Massachusetts"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+I completed the CS 670 course on Computer Vision at UMass Amherst with a full grade point.
+
+<!-- This is a description of a teaching experience. You can use markdown like any other post.
 
 Heading 1
 ======
@@ -17,4 +19,4 @@ Heading 2
 ======
 
 Heading 3
-======
+====== -->
