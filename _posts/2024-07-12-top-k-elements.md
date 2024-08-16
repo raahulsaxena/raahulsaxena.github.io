@@ -1,5 +1,5 @@
 ---
-title: 'Curated Top K Elements Problems'
+title: 'Study Plan: Top K Elements'
 date: 2024-07-12
 permalink: /posts/2024/07/top-k-elements-guide/
 tags:

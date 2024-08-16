@@ -1,5 +1,5 @@
 ---
-title: 'Curated Binary Tree Problems'
+title: 'Study Plan: Binary Tree'
 date: 2024-07-12
 permalink: /posts/2024/07/binary-tree-guide/
 tags:

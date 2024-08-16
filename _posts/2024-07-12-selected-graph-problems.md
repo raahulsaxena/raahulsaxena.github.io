@@ -1,5 +1,5 @@
 ---
-title: 'Curated Graphs Problems'
+title: 'Study Plan: Graphs'
 date: 2024-07-12
 permalink: /posts/2024/07/graphs-guide/
 tags:

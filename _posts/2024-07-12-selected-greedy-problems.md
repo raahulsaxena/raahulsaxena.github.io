@@ -1,5 +1,5 @@
 ---
-title: 'Curated Greedy Problems'
+title: 'Study Plan: Greedy'
 date: 2024-07-12
 permalink: /posts/2024/07/greedy-guide/
 tags:
