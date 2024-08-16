@@ -1,5 +1,5 @@
 ---
-title: 'Mastering Binary Tree Problems: A Comprehensive Guide'
+title: 'Binary Trees: A Comprehensive Guide'
 date: 2024-07-12
 permalink: /posts/2024/08/binary-tree-guide/
 tags:
@@ -8,7 +8,6 @@ tags:
   - leetcode
 ---
 
-# Mastering Binary Tree Problems: A Comprehensive Guide
 Binary trees are a fundamental data structure in computer science, often used in various applications ranging from databases to operating systems. Understanding the different types of problems and patterns associated with binary trees is essential for anyone looking to master data structures and algorithms. In this guide, we will explore key binary tree problem patterns and provide examples for each.
 
 ### Prerequisites
@@ -18,11 +17,11 @@ Before diving into binary tree problems, it’s important to have a solid grasp 
 - **Stack and Queue data structures**
 - **Tree Traversals (Inorder, Preorder, Postorder)**
 
-### Important Binary Tree Patterns
+## Important Binary Tree Patterns
 
 ## Pattern 1: Tree Traversals
 
-**Overview:**
+### Overview:
 Tree traversals are fundamental operations in binary trees, where each node in the tree is visited in a systematic way. The most common traversals are Inorder, Preorder, and Postorder.
 
 **Problems:**

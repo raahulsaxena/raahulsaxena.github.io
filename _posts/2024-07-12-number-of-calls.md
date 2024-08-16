@@ -1,7 +1,7 @@
 ---
-title: '1699. Number of Calls Between Two Persons'
+title: '1699: Number of Calls Between Two Persons'
 date: 2024-07-12
-permalink: /posts/2024/07/leetcode-1699/
+permalink: /posts/2024/07/number-of-calls/
 tags:
   - sql
   - leetcode
