@@ -1,5 +1,5 @@
 ---
-title: 'Curated K-Way Merge Problems'
+title: 'Study Plan: K-way Merge'
 date: 2024-07-12
 permalink: /posts/2024/07/k-way-merge-guide/
 tags:

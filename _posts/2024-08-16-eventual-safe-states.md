@@ -10,7 +10,6 @@ tags:
 ---
 
 
-# LeetCode 802: Find Eventual Safe States
 
 ## Problem Statement
 

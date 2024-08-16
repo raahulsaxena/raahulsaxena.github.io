@@ -1,5 +1,5 @@
 ---
-title: 'Curated Sliding Window Problems'
+title: 'Study Plan: Sliding Window Pattern'
 date: 2024-07-12
 permalink: /posts/2024/07/sliding-window-guide/
 tags:

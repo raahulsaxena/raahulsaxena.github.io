@@ -1,5 +1,5 @@
 ---
-title: 'Curated Dynamic Programming Problems'
+title: 'Study Plan: Dynamic Programming'
 date: 2024-07-11
 permalink: /posts/2024/07/dynamic-programming-guide/
 tags:
