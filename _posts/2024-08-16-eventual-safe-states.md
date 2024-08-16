@@ -1,7 +1,15 @@
+
 ---
-title: "LeetCode 802: Find Eventual Safe States"
+title: '802: Find Eventual Safe States'
 date: 2024-08-16
+permalink: /posts/2024/08/eventual-safe-states/
+tags:
+  - graph
+  - graph-coloring
+  - leetcode
+  - dfs
 ---
+
 
 # LeetCode 802: Find Eventual Safe States
 
