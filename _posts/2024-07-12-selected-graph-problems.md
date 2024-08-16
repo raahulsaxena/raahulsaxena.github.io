@@ -105,7 +105,7 @@ void dfs(int node, const std::vector<std::vector<int>>& graph, std::vector<bool>
 
 ## Pattern 3: Connected Components
 
-###Overview:
+### Overview:
 
 Connected Components refer to a set of nodes such that there is a path between any two nodes in the set. In undirected graphs, it can be found using either BFS or DFS.
 

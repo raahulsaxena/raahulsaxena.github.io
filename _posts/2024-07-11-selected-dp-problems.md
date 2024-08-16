@@ -7,23 +7,17 @@ tags:
   - leetcode
 ---
 
+This page is continually updated with new and improved content to ensure the best curation for Dynamic Programming problems.
 ## Important Links:
 
----
-
-Source : Striver SDE Sheet, 
-
-[Ultimate Dynamic Programming Roadmap](https://www.reddit.com/r/leetcode/comments/14o10jd/the_ultimate_dynamic_programming_roadmap/)
-
-[Youtube Link](https://www.youtube.com/watch?v=9k31KcQmS_U&ab_channel=AlgoMonster)
-
-[DP Patterns (Coded)](https://leetcode.com/discuss/study-guide/458695/Dynamic-Programming-Patterns)
-
-[All DP Problems sorted patterwise](https://leetcode.com/discuss/study-guide/1000929/solved-all-dynamic-programming-dp-problems-in-7-months)
+- Source : Striver SDE Sheet, 
+- [Ultimate Dynamic Programming Roadmap](https://www.reddit.com/r/leetcode/comments/14o10jd/the_ultimate_dynamic_programming_roadmap/)
+- [Youtube Link](https://www.youtube.com/watch?v=9k31KcQmS_U&ab_channel=AlgoMonster)
+[- DP Patterns (Coded)](https://leetcode.com/discuss/study-guide/458695/Dynamic-Programming-Patterns)
+- [All DP Problems sorted patterwise](https://leetcode.com/discuss/study-guide/1000929/solved-all-dynamic-programming-dp-problems-in-7-months)
 
 ## Pattern 1: 0/1 Knapsack (Bounded)
 
----
 
 Solution is built upon subset, but with few more restrictions. For example you want to complete some courses, they have some reward points associated. But you can attend only k number of courses. Now try to maximize your points. This type of problems are just an extension to simple DP, where you add one more dimension to consider provided restriction.
 
@@ -35,7 +29,6 @@ Solution is built upon subset, but with few more restrictions. For example you w
 
 ## Pattern 2: 0/1 Knapsack (Unbounded)
 
----
 
 Dp state is similar to the classical knapsack problem.
 
@@ -46,7 +39,6 @@ Dp state is similar to the classical knapsack problem.
 
 ## Pattern 3: Fibonacci (or Linear DP)
 
----
 
 You just need to find the repetitive part of the solution and improve it by saving its result.
 
@@ -63,7 +55,6 @@ Dp solution requires us to solve the sub problem on every prefix of the array. A
 
 ## Pattern 4: String DP
 
----
 
 ### Problems:
 
@@ -78,7 +69,6 @@ Dp solution requires us to solve the sub problem on every prefix of the array. A
 
 ## Pattern 5: Longest Common Subsequence (LCS) [String DP]
 
----
 
 ### Problems:
 
@@ -93,7 +83,6 @@ Dp solution requires us to solve the sub problem on every prefix of the array. A
 
 ## Pattern 6: Palindromes (LCS)
 
----
 
 ### Problems:
 
@@ -105,7 +94,6 @@ Dp solution requires us to solve the sub problem on every prefix of the array. A
 
 ## Pattern 7: Longest Increasing Subsequence (LIS)
 
----
 
 Dp problem is solved on every prefix of the array. Transition is from every index j < i.
 
@@ -118,7 +106,6 @@ Dp problem is solved on every prefix of the array. Transition is from every inde
 
 ## Pattern 8: Matrix Chain Multiplication
 
----
 
 Dp problem is solved on every single interval (subarray) of the array.
 
@@ -131,7 +118,6 @@ Dp problem is solved on every single interval (subarray) of the array.
 
 ## Pattern 9: Kadane’s Algorithm
 
----
 
 ### Problems:
 
@@ -143,7 +129,6 @@ Dp problem is solved on every single interval (subarray) of the array.
 
 ## Pattern 10: DP on Trees
 
----
 
 ### Problems:
 
@@ -155,7 +140,6 @@ Dp problem is solved on every single interval (subarray) of the array.
 
 ## Pattern 11: Grid DP
 
----
 
 Dp table will have the same dimensions as grid, the state at cell i,j will be related to the grid at cell i,j.
 
@@ -171,7 +155,6 @@ Dp table will have the same dimensions as grid, the state at cell i,j will be re
 
 ## Pattern 12: DP + Bitmask
 
----
 
 ### Problems:
 
@@ -181,7 +164,6 @@ Dp table will have the same dimensions as grid, the state at cell i,j will be re
 
 ## Pattern 13: Graph DP
 
----
 
 ### Problems:
 
