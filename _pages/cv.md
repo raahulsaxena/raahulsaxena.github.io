@@ -16,13 +16,14 @@ Education
 
 Work experience
 ======
-* May 2020 - July 2023: Software Engineer II (Data Analysis) at Philips
-  * Deployed Machine Learning models for automated customer complaints classification using R and NLP, to achieve 82% automation coverage and reduce manual classification time from 2 days to 10 minutes.
-  * Led a team of 5 engineers to develop and deploy MR medical imaging pipelines across 50+ hospitals, using Computer Vision to enhance image clarity and resolution, resulting in 20% faster and more accurate diagnoses.
-  * Built predictive models for component failure detection to prevent 50 downtimes, saving 500 man-hours annually.
-  * Leveraged time series forecasting to drive utilization insights across the MR installed base, improving resource
+Software Engineer II (Data Analysis) at Philips
+<i>May 2020 - July 2023</i>
+* Deployed Machine Learning models for automated customer complaints classification using R and NLP, to achieve 82% automation coverage and reduce manual classification time from 2 days to 10 minutes.
+* Led a team of 5 engineers to develop and deploy MR medical imaging pipelines across 50+ hospitals, using Computer Vision to enhance image clarity and resolution, resulting in 20% faster and more accurate diagnoses.
+* Built predictive models for component failure detection to prevent 50 downtimes, saving 500 man-hours annually.
+* Leveraged time series forecasting to drive utilization insights across the MR installed base, improving resource
 allocation by 25% and operational efficiency by 15%, resulting in $1 million annual cost savings.
-  * Developed the translator microservice using Flask to achieve translation retrieval times of 2 ms using Redis caching.
+* Developed the translator microservice using Flask to achieve translation retrieval times of 2 ms using Redis caching.
 
 * July, 2019 - April, 2020: Software Engineer I at Philips
   * Mastered Erlang to lead the resolution of critical bugs in the Data Manager module of the PerformanceBridge platform, to cut system downtime by 40% and enhanced reliability for 30+ healthcare facilities.
