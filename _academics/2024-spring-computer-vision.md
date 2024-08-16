@@ -1,7 +1,7 @@
 ---
 title: "CS 670: Computer Vision"
 collection: academics
-type: "course"
+type: "academics"
 permalink: /academics/2024-spring-computer-vision
 venue: "University of Massachusetts Amherst, CICS"
 date: 2024-02-05

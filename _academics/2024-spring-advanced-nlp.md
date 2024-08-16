@@ -1,7 +1,7 @@
 ---
 title: "CS 685: Advanced Natural Language Processing"
 collection: academics
-type: "course"
+type: "academics"
 permalink: /academics/2024-spring-advanced-nlp
 venue: "University of Massachusetts Amherst, CICS"
 date: 2024-02-05
