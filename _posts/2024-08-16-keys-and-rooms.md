@@ -10,7 +10,6 @@ tags:
   - recursion
 ---
 
-## Problem Statement
 
 You are given `n` rooms labeled from `0` to `n - 1`, and all the rooms are locked except for room `0`. Your goal is to visit all the rooms, but you cannot enter a locked room without having its key.
 
