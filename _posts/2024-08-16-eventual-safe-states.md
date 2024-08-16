@@ -11,11 +11,6 @@ tags:
 
 
 
-
-
-
-## Problem Statement
-
 Given a directed graph with `n` nodes labeled from `0` to `n - 1`, we need to identify all the **safe nodes** in the graph. A node is considered safe if every possible path starting from that node leads to a terminal node or another safe node. A terminal node is defined as a node that has no outgoing edges.
 
 The graph is represented by a 0-indexed 2D integer array `graph`, where `graph[i]` is an integer array of nodes adjacent to node `i`, meaning there is a directed edge from node `i` to each node in `graph[i]`.
