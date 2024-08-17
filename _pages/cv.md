@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * M.S. in Computer Science, University of Massachusetts Amherst, 2025 (Expected)
-* B.E. in Electrical Engineering, BITS Pilani, 2019
+* B.E.(Hons.) in Electrical Engineering, BITS Pilani, 2019
 
 Work experience
 ======
@@ -54,7 +54,7 @@ Python, PyTorch, Huggingface, Llama | Natural Language Processing | Mar - May 20
 * Developed a prompt scoring system to evaluate the <b>specificity of prompts</b> used with Large Language Models (<b>LLMs</b>).
 * Fine-tuned the Llama model with <b>QLoRA</b> to achieve a <b>20%</b> improvement in performance on specificity scoring.
 * Evaluated 3 LLMs (Alpaca, Claude, and Gemma) to find that Claude was <b>15%</b> better in coherence and constraints.
-* Created and annotated a dataset of <b>800 prompts,/b>, improving prompt scoring model accuracy by <b>10%.</b>
+* Created and annotated a dataset of <b>800 prompts</b>, improving prompt scoring model accuracy by <b>10%.</b>
 
   
 Skills

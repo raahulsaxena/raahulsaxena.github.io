@@ -1,7 +1,9 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Project Detail: Geospatial Object Detection"
+# excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+excerpt: "Develop a system that detects and classifies objects in satellite or aerial imagery, such as buildings, roads, and natural landmarks, and uses geolocation data to map them accurately. This could be used for urban planning, disaster response, or environmental monitoring"
+
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Page yet to be updated. Upcoming
