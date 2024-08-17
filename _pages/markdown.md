@@ -7,21 +7,25 @@ redirect_from:
   - /markdown.html
 ---
 
+This page contains the guide to modify this website.
+
 ## Locations of key files/directories
 
 * Basic config options: _config.yml
 * Top navigation bar config: _data/navigation.yml
 * Single pages: _pages/
 * Collections of pages are .md or .html files in:
-  * _publications/
+  * _projects/
   * _portfolio/
   * _posts/
-  * _teaching/
-  * _talks/
+  * _academics/
+  * _research/
 * Footer: _includes/footer.html
 * Static files (like PDFs): /files/
 * Profile image (can set in _config.yml): images/profile.png
 
+
+<!-- 
 ## Tips and hints
 
 * Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
@@ -261,4 +265,4 @@ This allows you to denote <var>variables</var>.
 **Footnotes**
 
 The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-
+ -->
