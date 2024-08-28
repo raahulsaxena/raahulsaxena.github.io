@@ -82,9 +82,16 @@ Explanation of popular problems like finding permutations, combinations, and sub
 
 The core logic to find permutations, combinations, and subsets:
 
-If you observe the core logic to find permutations, combinations, and subsets, you’ll notice that there is a huge similarity in approaching these problems, that’s why backtracking is an algorithm paradigm/pattern that can be used to solve certain types of similar problems.
+If you examine the core logic behind solving permutations, combinations, and subsets, you’ll notice a significant similarity in the approach to these problems. This is why backtracking serves as an effective algorithmic paradigm/pattern for tackling various types of related challenges.
 
 **For Subsets:**
+
+Generating all subsets of a given set of numbers is a fundamental problem in computer science, often appearing in coding interviews.
+
+**Problem:** If we’re given an array of distinct integers `nums = [1,2,3]`, the subsets of this array are `[[], [1], [2], [3], [1,2], [1,3], [2,3], [1,2,3]]`.
+
+The backtracking technique is an effective method to solve this problem by recursively building each subset. We incrementally construct subsets by either including or excluding each element in the array, exploring all possible combinations.
+
 
 ```cpp
 void backtrack(vector<int>& nums, int start, vector<int>& curr, vector<vector<int>>& res) {
@@ -99,8 +106,6 @@ void backtrack(vector<int>& nums, int start, vector<int>& curr, vector<vector<in
 ```
 
 **For Permutations**
-
-Generating all permutations of a given set of numbers is a classical problem in computer science, often asked in coding interviews.
 
 **Problem:** If we’re given an array of distinct integers `nums = [1,2,3]`, permutations of this array are `[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]`.
 
@@ -126,6 +131,10 @@ void backtrack(vector<int>& nums, int start, vector<vector<int>>& res) {
 
 **For Combinations:**
 
+**Problem:** If we’re given an array of distinct integers `nums = [1,2,3]` and asked to find all combinations of length `2`, the combinations of this array are `[[1,2], [1,3], [2,3]]`.
+
+The backtracking approach allows us to solve this problem by building combinations incrementally. We construct combinations by choosing elements in sequence, ensuring that each combination is unique and all possibilities are explored.
+
 ```cpp
 
 void backtrack(int n, int k, int start, vector<int>& curr, vector<vector<int>>& res) {
@@ -146,7 +155,7 @@ void backtrack(int n, int k, int start, vector<int>& curr, vector<vector<int>>& 
 
 ## Selected Backtracking Problems
 
-The following problems are selected from the top 100 liked problems, most frequently asked problems, and LeetCode 75 lists. The list below will be expanded iteratively to include new questions. Only good quality problems will be added to the list below:
+The following exhaustive list of problems are selected from the top 100 liked problems, most frequently asked problems, and LeetCode 75 lists. The list below will be expanded iteratively to include new questions. This is ** THE ONLY** list of problems that you'll ever need to master backtracking and make it one of your strongest subjects. Only high quality problems will be added to the list below:
 
 - [Generate Parentheses](https://leetcode.com/problems/generate-parentheses)
 - [N-Queens](https://leetcode.com/problems/n-queens)
