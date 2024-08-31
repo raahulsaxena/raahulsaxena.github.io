@@ -2,7 +2,7 @@
 title: "Achieving Consistency: Earning the DCC August 2024 and 50 Days in 2024 Badges"
 date: 2024-08-31
 permalink: /posts/2024/08/dcc-august-2024/
-tags: [LeetCode, Coding Challenges, Software Engineering, Consistency]
+tags: 
     - leetcode
     - daily-coding-challenge
     - leetcode-badges
