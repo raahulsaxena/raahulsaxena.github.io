@@ -1,7 +1,7 @@
 ---
 title: "Achieving Consistency: Earning the DCC August 2024 and 50 Days in 2024 Badges"
 date: 2024-08-31
-permalink: /posts/2024/08/achieving-consistency-dcc-august-2024/
+permalink: /posts/2024/08/dcc-august-2024/
 tags: [LeetCode, Coding Challenges, Software Engineering, Consistency]
     - leetcode
     - daily-coding-challenge
@@ -34,4 +34,3 @@ The key is consistency—keep at it, and you’ll see the results. Keep learning
 
 With the Fall semester just around the corner, I’m gearing up for the exciting and challenging coursework ahead. It’s going to be hectic and fast-paced—exactly how I like it. If you’re not feeling a bit out of control, you’re not pushing yourself hard enough!
 
-#CodingChallenges #SoftwareEngineering #Consistency
