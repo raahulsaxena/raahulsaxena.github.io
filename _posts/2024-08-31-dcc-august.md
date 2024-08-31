@@ -9,8 +9,6 @@ tags:
   - consistency
 ---
 
-
-
 🎉 Excited to share that I’ve earned the “DCC August 2024” and “50 Days in 2024” badges on LeetCode!
 
 The DCC badge is for solving the Daily Coding Challenge every day throughout August, while the 50 Days badge recognizes consistency in solving problems over 50 days (even if non-consecutive).
