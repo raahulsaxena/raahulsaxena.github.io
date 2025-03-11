@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - raahulsaxena
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
+  - raahulsaxena/raahulsaxena
   - jekyll/jekyll
   - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - raahulsaxena/bioNLP-independent-study
+  - raahulsaxena/awesome-system-design-resources
