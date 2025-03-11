@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://raahulsaxena.github.io/al-folio/sitemap.xml
+Sitemap: https://raahulsaxena.github.io/sitemap.xml
