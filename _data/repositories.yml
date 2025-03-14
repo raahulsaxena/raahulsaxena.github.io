@@ -4,6 +4,12 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - raahulsaxena/raahulsaxena
+  - raahulsaxena/RAG-based-patent-analysis-tool
+  - raahulsaxena/photo-geolocation-neural-networks
+  - raahulsaxena/advanced-camouflage-detection
   - raahulsaxena/bioNLP-independent-study
+  - raahulsaxena/emotion-based-style-transfer
+  - raahulsaxena/prompt_score
   - raahulsaxena/awesome-system-design-resources
+  - raahulsaxena/raahulsaxena.github.io
+
