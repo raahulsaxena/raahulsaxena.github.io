@@ -8,7 +8,6 @@ categories: [Natural Language Processing, Machine Learning]
 featured: true
 ---
 
-## NLP Interview Guide
 
 ### Supervised Learning
 Given a collection of labeled examples (where each example is a text `X` paired with a label `Y`), learn a mapping from `X` to `Y`.
@@ -30,9 +29,21 @@ Example: pretrain a LLM on billions of words, and then feed in *what is the sent
 
 Let’s say we wanted to train a supervised model on sentiment analysis. In the past, we would have trained a supervised model on labeled examples (text/score pairs).
 
-![image.png](attachment:9bdac207-077b-4310-bd39-eaf5a54049e1:image.png)
+![n-gram-1.png](raahulsaxena.github.io/assets/img/nlp-guide/n-gram-1.png)
 
 Nowadays, we take advantage of *transfer learning*:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="raahulsaxena.github.io/assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="raahulsaxena.github.io/assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    N-gram-2
+</div>
 
 ![image.png](attachment:9ba71f2f-86f5-434a-9d44-638bf16b7e77:image.png)
 
