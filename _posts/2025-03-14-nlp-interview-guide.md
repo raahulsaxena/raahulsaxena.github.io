@@ -10,15 +10,18 @@ featured: false
 
 
 ### Supervised Learning
+---
 Given a collection of labeled examples (where each example is a text `X` paired with a label `Y`), learn a mapping from `X` to `Y`.
 
 ### Self-Supervised Learning
+---
 Given a collection of *just text*, without extra labels, **create labels out of the text** and use them for *pretraining* a model that has some general understanding of human language.
 
 - **Language Modeling**: Given the beginning of a sentence or document, predict the next word.
 - **Masked Language Modeling**: Given an entire document with some words or spans masked out, predict the missing words.
 
 ### In-context Learning
+---
 First pretrain a self-supervised model, and then prompt it in natural language to solve a particular task without any further understanding.
 
 Example: pretrain a LLM on billions of words, and then feed in *what is the sentiment of this sentence: <insert sentence>*
@@ -26,7 +29,7 @@ Example: pretrain a LLM on billions of words, and then feed in *what is the sent
 - Checkout [**api.together.xyz**](http://api.together.xyz) !
 
 ## N-gram Language Models
-
+---
 Let’s say we wanted to train a supervised model on sentiment analysis. In the past, we would have trained a supervised model on labeled examples (text/score pairs).
 
 <div class="row mt-3 justify-content-center">
@@ -54,7 +57,7 @@ Nowadays, we take advantage of *transfer learning*:
 For n-gram models discussion, we focus on language modeling which form the core of ***Step 1: self-supervised pretraining.***
 
 ### Language Models Assign a Probability to a Piece of Text
-
+---
 - **Translation**: Picking the most likely translation from a list of candidates.
     - P(i flew to the movies) <<<< P(i went to the movies)
 
@@ -64,13 +67,13 @@ For n-gram models discussion, we focus on language modeling which form the core 
 Language models allow us to assign this probability to the words. Example: in search bars.
 
 ### Probabilistic Language Modeling
-
+---
 - **Goal**: Compute the probability of a sentence or sequence of words.
 
 #### The Chain Rule
 
 **Conditional Probability**:
-
+---
 $$
 P(B | A) = \frac{P(A, B)}{P(A)} 
 $$
@@ -124,7 +127,7 @@ $$
 - Checkout **infini-gram** paper.
 
 ### One Hot Vectors
-
+---
 - N-gram models rely on the “bag-of-words” assumption.
 - Represent each word/n-gram as a vector of zeros with a single 1 identifying its index.
 
@@ -141,7 +144,7 @@ $$
 - We ideally want a representation space in which words, phrases, sentences, etc. that are semantically similar have similar representations.
 
 ### Notion of Perplexity
-
+---
 - **Lower perplexity = better model**.
 - Perplexity is the *exponentiated token-level negative log-likelihood*.
 - Given a prefix, how many next words are reasonable predictions given that prefix.
@@ -155,7 +158,7 @@ $$
 | Perplexity | 962 | 170 | 109 |
 
 ## Neural Language Models
-
+---
 <div class="row mt-3 justify-content-center">
     <div class="col-sm-6">
         {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
@@ -166,7 +169,7 @@ $$
 </div>
 
 ### Words as Basic Building Blocks
-
+---
 - Represent words with low-dimensional vectors called embeddings.
 
 <div class="row mt-3 justify-content-center">
@@ -230,7 +233,7 @@ How to go from vector representation (Wx) to a probability distribution of the n
 </div>
 
 ### Different Types of Composition Functions
-
+---
 *Input*: sequence of word embeddings corresponding to the tokens of a given prefix.
 
 *Output*: single vector.
@@ -242,7 +245,7 @@ How to go from vector representation (Wx) to a probability distribution of the n
 - Transformers
 
 ### A Fixed Window Neural Language Model
-
+---
 <div class="row mt-3 justify-content-center">
     <div class="col-sm-6">
         {% include figure.liquid loading="eager" path="assets/img/nlp-guide/fixed-window-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
@@ -256,7 +259,7 @@ How to go from vector representation (Wx) to a probability distribution of the n
 - *f* in the above figure is a non-linear function. We want to model non-linear relationships, and therefore there is a need for non-linear functions.
 
 ### How Does This Compare to Normal N-gram Model?
-
+---
 **Improvements**:
 
 - No sparsity problem.
@@ -272,7 +275,7 @@ How to go from vector representation (Wx) to a probability distribution of the n
 These remaining problems are addressed by **Recurrent Neural Networks**.
 
 ## Recurrent Neural Networks
-
+---
 It is **sequential** and does the calculation from left to right [words of prefix].
 
 - It addresses the problem of not sharing the weights across the window.
