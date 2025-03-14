@@ -5,7 +5,5 @@ repo_description_lines_max: 2
 
 github_repos:
   - raahulsaxena/raahulsaxena
-  - jekyll/jekyll
-  - twbs/bootstrap
   - raahulsaxena/bioNLP-independent-study
   - raahulsaxena/awesome-system-design-resources
