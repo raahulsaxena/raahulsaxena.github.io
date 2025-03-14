@@ -31,7 +31,7 @@ Let’s say we wanted to train a supervised model on sentiment analysis. In the 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -42,7 +42,7 @@ Nowadays, we take advantage of *transfer learning*:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -128,7 +128,7 @@ $$
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/one-hot-1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/one-hot-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -157,7 +157,7 @@ $$
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -170,7 +170,7 @@ $$
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-2.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-2.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -185,7 +185,7 @@ $$
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-3.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-3.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -196,7 +196,7 @@ $$
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-4.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-4.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -221,7 +221,7 @@ How to go from vector representation (Wx) to a probability distribution of the n
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/softmax-2.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/softmax-2.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -245,7 +245,7 @@ How to go from vector representation (Wx) to a probability distribution of the n
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/fixed-window-1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/fixed-window-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -281,7 +281,7 @@ It is **sequential** and does the calculation from left to right [words of prefi
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/rnn-1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/rnn-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
@@ -315,7 +315,7 @@ It is **sequential** and does the calculation from left to right [words of prefi
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/forward-1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/forward-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
