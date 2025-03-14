@@ -74,7 +74,7 @@
   "education": [
     {
       "institution": "University of Massachusetts Amherst",
-      "location": "Amherst, Massachusetts",
+      "location": "Amherst, MA",
       "area": "Computer Science",
       "studyType": "MS",
       "startDate": "2023-08-01",
@@ -116,22 +116,60 @@
       "date": "2022-06-01",
       "issuer": "Coursera",
       "url": "https://example.com"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Advanced Camouflaged Object Detection",
-      "publisher": "GitHub",
-      "releaseDate": "2024-05-01",
-      "url": "https://github.com/raahulsaxena/advanced-camouflage-detection",
-      "summary": "Developed a deep learning-based model to detect camouflaged objects in challenging environments."
     },
     {
-      "name": "Emotion-based Style Transfer",
-      "publisher": "GitHub",
-      "releaseDate": "2023-11-01",
-      "url": "https://github.com/raahulsaxena/emotion-based-style-transfer",
-      "summary": "Worked on emotion-based style transfer to modify visual attributes of text based on emotional tone."
+      "name": "Problem Solving (Intermediate)",
+      "date": "2024-10-01",
+      "issuer": "HackerRank",
+      "url": "https://www.hackerrank.com/certificates/D1CA46688146"
+    },
+    {
+      "name": "Python (Basic)",
+      "date": "2024-10-01",
+      "issuer": "HackerRank",
+      "url": "https://www.hackerrank.com/certificates/7C7A5AEAED71"
+    },
+    {
+      "name": "SQL (Intermediate)",
+      "date": "2024-08-01",
+      "issuer": "HackerRank",
+      "url": "https://www.hackerrank.com/certificates/8B5DB0A586FC"
+    },
+    {
+      "name": "ISTQB Foundation",
+      "date": "2022-07-01",
+      "issuer": "Indian Testing Board",
+      "url": "https://example.com"
+    },
+    {
+      "name": "Java (Basic)",
+      "date": "2022-04-01",
+      "issuer": "HackerRank",
+      "url": "https://www.hackerrank.com/certificates/06305E147C48"
+    },
+    {
+      "name": "SQL (Basic)",
+      "date": "2022-04-01",
+      "issuer": "HackerRank",
+      "url": "https://www.hackerrank.com/certificates/D7EDBB8ACB0E"
+    },
+    {
+      "name": "Problem Solving (Basic)",
+      "date": "2020-09-01",
+      "issuer": "HackerRank",
+      "url": "https://www.hackerrank.com/certificates/8173B3A67B21"
+    },
+    {
+      "name": "AWS Cloud Practitioner Essentials",
+      "date": "2024-05-01",
+      "issuer": "Amazon Web Services (AWS)",
+      "url": "https://www.aws.training"
+    },
+    {
+      "name": "AWS Technical Essentials",
+      "date": "2024-05-01",
+      "issuer": "Amazon Web Services (AWS)",
+      "url": "https://www.aws.training"
     }
   ],
   "skills": [
@@ -204,25 +242,6 @@
         "Full-Stack Development",
         "Cloud Computing"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "reference": "Rahul is an exceptionally talented student with strong technical skills and the ability to approach complex problems with ease."
-    }
-  ],
-  "projects": [
-    {
-      "name": "Prompt Score",
-      "summary": "Developed a model to score and evaluate the effectiveness of NLP prompts based on response accuracy.",
-      "highlights": [
-        "Improved prompt engineering techniques.",
-        "Evaluated performance on large-scale datasets."
-      ],
-      "startDate": "2024-03-01",
-      "endDate": "2024-03-01",
-      "url": "https://github.com/raahulsaxena/prompt_score"
     }
   ]
 }

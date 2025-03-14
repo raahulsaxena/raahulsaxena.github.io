@@ -38,6 +38,16 @@ Let’s say we wanted to train a supervised model on sentiment analysis. In the 
     N-gram Language Model
 </div>
 
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
+    </div>
+</div>
+<div class="caption">
+    N-gram Language Model
+</div>
+
+
 Nowadays, we take advantage of *transfer learning*:
 
 <div class="row mt-3">
