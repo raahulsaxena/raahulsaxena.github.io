@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mastering Knapsack: The Dynamic Programming Patterns You Need to Know
+title: Mastering Knapsack The Dynamic Programming Patterns You Need to Know
 date: 2025-03-13 15:09:00
 description: Knapsack problems are a cornerstone of dynamic programming, appearing in countless algorithmic challenges. In this guide, we break down the 0-1 Knapsack and Unbounded Knapsack patterns
 tags: leetcode
