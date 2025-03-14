@@ -254,8 +254,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-moved-to-amherst-massachusetts-started-my-ms-in-computer-science-at-university-of-massachusetts-amherst-sparkles-smile",
-          title: 'Moved to Amherst, Massachusetts. Started my MS in Computer Science at University of...',
+            },},{id: "news-started-my-ms-in-computer-science-at-university-of-massachusetts-amherst-sparkles-smile",
+          title: 'Started my MS in Computer Science at University of Massachusetts Amherst. :sparkles: :smile:...',
           description: "",
           section: "News",},{id: "news-started-working-as-a-researcher-at-umass-bionlp",
           title: 'Started working as a Researcher at UMass BioNLP',
