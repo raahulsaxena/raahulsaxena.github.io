@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-post-with-image-galleries",
+            },{id: "post-let-39-s-do-dynamic-programming",
+      
+        title: "Let&#39;s do Dynamic Programming",
+      
+      description: "The best dynamic programming study plan (incl. questions)",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/dp-study-plan/";
+        
+      },
+    },{id: "post-a-post-with-image-galleries",
       
         title: "a post with image galleries",
       
