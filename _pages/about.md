@@ -28,3 +28,4 @@ latest_posts:
 
 Hi! I am Rahul. I'm a Master’s student in Computer Science at the University of Massachusetts Amherst, with a strong focus on Machine Learning, NLP, and AI Systems. 
 I have industry experience as a Software Engineer at Philips, where I worked on large-scale AI-driven applications. Currently, I'm a Graduate Student Researcher at Spotify, focusing on ML-driven solutions.
+Contact: rahulsaxena [‘at’] cs ‘dot’ umass ‘dot’ edu
