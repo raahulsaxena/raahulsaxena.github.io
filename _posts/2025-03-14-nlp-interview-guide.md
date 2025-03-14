@@ -5,7 +5,7 @@ date: 2025-03-14
 description: A comprehensive guide to understanding core NLP concepts and techniques, including supervised learning, self-supervised learning, language models, and more.
 tags: [NLP, Machine Learning, Algorithms]
 categories: [Natural Language Processing, Machine Learning]
-featured: true
+featured: false
 ---
 
 
@@ -29,16 +29,16 @@ Example: pretrain a LLM on billions of words, and then feed in *what is the sent
 
 Let’s say we wanted to train a supervised model on sentiment analysis. In the past, we would have trained a supervised model on labeled examples (text/score pairs).
 
-![n-gram-1.png](raahulsaxena.github.io/assets/img/nlp-guide/n-gram-1.png)
+![n-gram-1.png](assets/img/nlp-guide/n-gram-1.png)
 
 Nowadays, we take advantage of *transfer learning*:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="raahulsaxena.github.io/assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="raahulsaxena.github.io/assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
