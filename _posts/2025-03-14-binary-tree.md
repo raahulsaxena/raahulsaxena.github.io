@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Branching Out: A Deep Dive into Binary Trees
+title: Branching Out -  A Deep Dive into Binary Trees
 date: 2025-03-13 15:09:00
 description: Binary trees are the backbone of countless algorithms. In this blog, we’ll explore their structure, traversal techniques.
 tags: leetcode

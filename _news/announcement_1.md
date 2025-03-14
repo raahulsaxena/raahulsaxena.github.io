@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Moved to Amherst, Massachusetts. Started MS in Computer Science at University of Massachusetts Amherst. :sparkles: :smile:
