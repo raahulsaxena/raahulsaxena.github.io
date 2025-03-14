@@ -1,81 +1,72 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
+title: Prompt Score
+description: CS 685 course project
+img: assets/img/4.jpg
+importance: 1
 category: work
-giscus_comments: true
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Authors:** Rahul Saxena, Amritansh Mishra, Manish Ranjan Karna, Manas Wadhwa
+**Institution:** UMass Amherst
+[GitHub Link](https://github.com/raahulsaxena/prompt_score)
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Abstract
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+In this project, we introduce **PromptScore**, a novel mechanism designed to evaluate the specificity of prompts used in interacting with Large Language Models (LLMs) like GPT-4. Our goal is to create a standardized scoring system that assesses the effectiveness of prompts based on metrics such as coherence, clarity, and ambiguity. This scoring system, validated by human annotators, aims to provide a deeper understanding of LLM capabilities and performance, particularly in handling specific and complex prompts.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Problem Statement
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+The effectiveness of prompts significantly impacts the performance of LLMs. However, the lack of a standardized prompt evaluation metric poses challenges in optimizing prompt design for specific use cases. Our project addresses this gap by developing a prompt scoring system that evaluates prompt specificity and its impact on LLM performance. We explored two approaches: fine-tuning the LLaMA model using the QLoRA technique and leveraging GPT-4's few-shot prompting strategy to generate prompt scores.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Methodology
 
-{% raw %}
+### Dataset Creation
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+We curated a dataset comprising 800 prompts, each annotated with scores based on four criteria:
 
-{% endraw %}
+- **Number of Constraints:** The total number of constraints in the prompt.
+- **Constraint Complexity:** The complexity of each individual constraint.
+- **Clarity:** The clarity and understandability of the prompt.
+- **Prompt Complexity:** The overall complexity of the prompt's storyline or structure.
+
+### Model Fine-Tuning
+
+1. **LLaMA Fine-Tuning:**  
+   We fine-tuned the LLaMA model using the QLoRA approach on our custom dataset. Despite optimizing hyperparameters such as learning rate and batch size, LLaMA's performance on prompt evaluation remained suboptimal compared to GPT-4.
+
+2. **GPT-4 Few-Shot Learning:**  
+   We used GPT-4 in a few-shot learning configuration to evaluate prompts. GPT-4 outperformed LLaMA, demonstrating a better understanding of the evaluation criteria and generating more coherent and high-quality prompt evaluations.
+
+### Evaluation Metrics
+
+To evaluate the generated stories, we instructed GPT-4 to assess each story based on the following criteria:
+
+- **Coherence:** Logical consistency and narrative flow.
+- **Constraints Satisfied:** Adherence to the specific constraints outlined in the prompt.
+- **Fluency:** Readability and linguistic quality.
+
+## Results
+
+Our experiments revealed that GPT-4's few-shot learning approach significantly outperformed the fine-tuned LLaMA model in generating accurate prompt scores. The results indicated that as prompt specificity increases, the performance of LLMs deteriorates, particularly in maintaining coherence and satisfying constraints.
+
+### Key Findings
+
+- **LLaMA Model:** Struggled with nuanced prompt evaluation, particularly in coherence and constraints.
+- **GPT-4:** Demonstrated superior performance in evaluating complex and specific prompts, validating the effectiveness of the PromptScore system.
+
+## Error Analysis
+
+We identified a limitation in the model's ability to score highly specific prompts accurately. For instance, prompts with intricate constraints tended to receive lower scores than expected, suggesting that our model may require further fine-tuning or a larger, more diverse dataset to improve accuracy.
+
+## Conclusion
+
+Our PromptScore system offers a standardized approach to evaluating prompt specificity and its impact on LLM performance. The findings suggest that GPT-4 is better equipped to handle complex prompts, making it a more reliable model for generating and evaluating specific language tasks. Future work will focus on expanding the dataset, refining the scoring system, and exploring alternative models to enhance prompt evaluation accuracy.
+
+## Future Work
+
+- **Expand the Evaluation Dataset:** Increase the number of prompts with varying specificity to calculate more robust performance metrics.
+- **Explore Alternative Scoring Methods:** Investigate other LLMs or continuous scoring systems for more accurate and nuanced evaluations.
+- **Apply PromptScore to Other Domains:** Generalize the scoring system to assess prompts across different domains and tasks.

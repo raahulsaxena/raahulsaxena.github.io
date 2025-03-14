@@ -7,4 +7,3 @@ related_posts: false
 ---
 
 Started working as a Graduate Student Researcher at Spotify on the project "Learning Accuracy/Efficiency tradeoffs in Semantic Parsing" via the Industry Mentorship Program.
-

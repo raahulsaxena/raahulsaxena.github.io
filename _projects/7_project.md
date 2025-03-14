@@ -1,81 +1,78 @@
 ---
 layout: page
-title: project 7
-description: with background image
+title: Advanced Camouflaged Object Detection in Limited Data Setting
+description: CS 670 course project
 img: assets/img/4.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**Authors:** Rahul Saxena, Vinitra Muralikrishnan, Mustafa Chasmai  
+**Institution:** UMass Amherst
+[GitHub Link](https://github.com/raahulsaxena/advanced-camouflage-detection)
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Abstract
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Camouflaged Object Detection (COD) is a challenging task due to the inherent difficulty in distinguishing objects that intentionally blend into their surroundings. This challenge is compounded by the limited size and diversity of existing COD datasets. Our project explores various methods to enhance camouflaged object segmentation, especially in limited data settings, using techniques such as data augmentation, synthetic data generation, and weakly supervised learning. We aim to improve upon existing benchmarks and catalyze future research in this domain.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Introduction
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Detecting camouflaged objects is inherently challenging for both humans and machine learning models. These objects, by design, blend seamlessly with their environment, making them difficult to identify. Traditional segmentation models, which excel at detecting conspicuous objects, struggle with camouflaged objects due to their reliance on visual differences from the background.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+This project aims to explore methods to enhance camouflaged object segmentation by overcoming the limitations posed by small, less diverse datasets. We focus on augmenting the training data through style transfer, generating synthetic data, and exploring weakly supervised segmentation approaches. These methods are evaluated against the Segment Anything Model (SAM), a state-of-the-art model for general object segmentation.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Background
 
-{% raw %}
+Camouflaged Object Detection (COD) draws inspiration from the natural world, where many species have evolved sophisticated camouflage techniques. This ability to blend in is achieved through pigments or physical structures that manipulate light, making the species difficult to detect. Translating these biological insights into machine learning involves creating models that can recognize these subtle cues in images.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+In contrast to common object detection datasets like COCO, which contain hundreds of thousands of labeled images, COD datasets are relatively small. This scarcity of data presents a significant challenge for training effective segmentation models. Our approach leverages data augmentation and synthetic data generation to mitigate this challenge and improve model robustness.
 
-{% endraw %}
+## Related Work
+
+Research in COD is still nascent compared to other forms of object detection. Early efforts, such as the CAMO and COD10K datasets, laid the foundation for this field by providing the first dedicated datasets for camouflaged object detection. SINet, a model designed specifically for COD, mimics the human visual system's search and identification process, offering a robust baseline for our experiments.
+
+## SINet Backbone and ResNet-18
+
+We built our approach on a modified SINet architecture, which traditionally uses a ResNet-50 backbone. To reduce computational demands without sacrificing performance, we replaced ResNet-50 with ResNet-18. This adjustment maintained effective object detection capabilities while improving efficiency, particularly in scenarios with limited computational resources.
+
+### Key Components of SINet
+
+1. **Search Module (SM):** Mimics the initial phase of a predator's hunt, highlighting potential regions where camouflaged objects might be located.
+2. **Identification Module (IM):** Refines the detection process, ensuring accurate segmentation by integrating multi-level features processed from the SM.
+
+## Proposed Methods
+
+### Style-Transfer as Augmentation
+
+To introduce more diversity into the training data, we developed a data augmentation pipeline using Neural Style Transfer. This technique mimics natural camouflage by blending objects into different backgrounds and textures. For instance, an owl camouflaged in rocky terrain could be transformed into an owl camouflaged on a beach. This method helps the model learn to detect camouflaged objects in varied environments.
+
+### Weakly Supervised Segmentation
+
+Given the difficulty of obtaining annotated data for camouflaged objects, we explored weakly supervised methods. We trained a binary classifier to predict whether an image contains a camouflaged object, achieving 90% accuracy. While this approach doesn't match the performance of fully supervised methods, it provides valuable insights into what the model "sees" in these challenging images.
+
+### Synthetic Data Generation
+
+We used generative models to create additional training images, simulating camouflaged objects in different environments. By varying the color and texture of both the object and its surroundings, we generated a diverse set of images to supplement the original dataset. This synthetic data bridges the gap between camouflaged and generic image segmentation tasks.
+
+## Experiments, Results, and Benchmark
+
+### Dataset Description
+
+We used three benchmark datasets for our experiments: CAMO, COD10K, and CHAMELEON. These datasets contain a variety of camouflaged objects, from animals to artificially camouflaged objects like soldiers. Our experiments focused on semantic segmentation tasks using the corresponding labels in COD10K.
+
+### Evaluation Metrics
+
+We evaluated our models using the following metrics:
+
+- **Intersection Over Union (IOU):** Measures the overlap between predicted and true segmentation masks.
+- **Pixel Accuracy (P-ACC):** Calculates the accuracy of correctly classified pixels.
+- **Dice Score:** Gauges the similarity between the predicted mask and the ground truth, particularly useful for datasets with class imbalances.
+
+### Analysis of Results
+
+Our experiments demonstrated that incorporating style transfer and synthetic data significantly improved model performance. For example, using style-transfer augmented images led to a 4.1% improvement in IOU, while synthetic data improved IOU by 7.8%. These methods also narrowed the performance gap between SINet and the SAM model, highlighting the effectiveness of our approach.
+
+## Conclusions
+
+Our project shows that style transfer and synthetic data are potent strategies for enhancing camouflaged object segmentation. These methods introduce variability and complexity into the training process, enabling models to perform better in limited data settings. Future work could extend this research by applying these techniques to broader datasets, further improving the model's ability to detect camouflaged objects in diverse scenarios.

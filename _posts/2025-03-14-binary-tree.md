@@ -14,6 +14,7 @@ Binary trees are a fundamental data structure in computer science, often used in
 ### Prerequisites
 
 Before diving into binary tree problems, it’s important to have a solid grasp of the following concepts:
+
 - **Recursion**
 - **Stack and Queue data structures**
 - **Tree Traversals (Inorder, Preorder, Postorder)**
@@ -22,10 +23,12 @@ Before diving into binary tree problems, it’s important to have a solid grasp 
 
 ## Pattern 1: Tree Traversals
 
-### Overview:
+### Overview
+
 Tree traversals are fundamental operations in binary trees, where each node in the tree is visited in a systematic way. The most common traversals are Inorder, Preorder, and Postorder.
 
 **Problems:**
+
 - [Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) (Iterative and Recursive)
 - [Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) (Iterative and Recursive)
 - [Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) (Iterative and Recursive)
@@ -65,11 +68,13 @@ std::vector<int> inorderTraversal(TreeNode* root) {
 Level Order Traversal, also known as Breadth-First Search (BFS) for trees, involves visiting all the nodes level by level, from left to right. It’s commonly used to solve problems where you need to examine nodes on the same level of the tree.
 
 **Key Points:**
+
 - Use a queue to keep track of nodes at the current level.
 - Process nodes level by level, adding their children to the queue.
 - This approach is particularly useful for problems that involve hierarchical data.
 
 **Problems:**
+
 - [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
 - [Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/)
 - [Vertical Order Traversal](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/)
@@ -105,12 +110,12 @@ std::vector<std::vector<int>> levelOrder(TreeNode* root) {
     return result;
 }
 ```
-### Explanation:
 
-•	A queue is used to store nodes of the tree.
-•	The size of the queue at each level is captured to determine the number of nodes on that level.
-•	Nodes are processed one level at a time, and their children are added to the queue for the next level.
+### Explanation
 
+•A queue is used to store nodes of the tree.
+•The size of the queue at each level is captured to determine the number of nodes on that level.
+•Nodes are processed one level at a time, and their children are added to the queue for the next level.
 
 ## Pattern 3: Views of Binary Tree
 
@@ -118,12 +123,14 @@ std::vector<std::vector<int>> levelOrder(TreeNode* root) {
 The "views" of a binary tree refer to the nodes that are visible when the tree is viewed from different perspectives: top, left, right, and boundary views. These problems require traversing the tree in a way that simulates how the tree would look from a specific direction.
 
 **Key Points:**
+
 - **Top View:** Nodes visible when the tree is viewed from the top.
 - **Left View:** Nodes visible when the tree is viewed from the left side.
 - **Right View:** Nodes visible when the tree is viewed from the right side.
 - **Boundary View:** Combination of the left boundary, leaves, and right boundary.
 
 **Problems:**
+
 - [Top View of Binary Tree](https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1)
 - [Left View of Binary Tree](https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1)
 - [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)
@@ -173,12 +180,14 @@ std::vector<int> rightSideView(TreeNode* root) {
 Binary tree properties and depth calculations involve determining various metrics related to the structure of a tree, such as its depth, height, diameter, and width. These problems often require recursive approaches to traverse the tree and calculate the desired properties.
 
 **Key Points:**
+
 - **Maximum/Minimum Depth:** The number of nodes along the longest/shortest path from the root node down to the farthest/nearest leaf node.
 - **Balanced Binary Tree:** A binary tree is balanced if the depth of the two subtrees of every node never differs by more than one.
 - **Diameter:** The length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
 - **Width:** The maximum number of nodes at any level of the binary tree.
 
 **Problems:**
+
 - [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
 - [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)
 - [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
@@ -204,15 +213,13 @@ int maxDepth(TreeNode* root) {
     return std::max(leftDepth, rightDepth) + 1;
 }
 ```
-### Explanation:
 
-•	Maximum Depth: This is calculated by recursively finding the depth of the left and right subtrees and returning the maximum of the two, plus one for the current node.
-•	Balanced Binary Tree: For checking if a tree is balanced, you can calculate the depth of each subtree and ensure that the difference is no more than one at every node.
-•	Diameter: To find the diameter, calculate the depth of left and right subtrees for each node and track the maximum sum of these depths across all nodes.
-•	Width: Use level order traversal to count the number of nodes at each level and keep track of the maximum.
+### Explanation
 
-
-
+•Maximum Depth: This is calculated by recursively finding the depth of the left and right subtrees and returning the maximum of the two, plus one for the current node.
+•Balanced Binary Tree: For checking if a tree is balanced, you can calculate the depth of each subtree and ensure that the difference is no more than one at every node.
+•Diameter: To find the diameter, calculate the depth of left and right subtrees for each node and track the maximum sum of these depths across all nodes.
+•Width: Use level order traversal to count the number of nodes at each level and keep track of the maximum.
 
 ## Pattern 5: Lowest Common Ancestor (LCA)
 
@@ -220,11 +227,13 @@ int maxDepth(TreeNode* root) {
 The Lowest Common Ancestor (LCA) of two nodes in a binary tree is the deepest node that is an ancestor of both nodes. This concept is widely used in problems involving relationships between nodes in a tree, such as finding common ancestors or determining hierarchical structures.
 
 **Key Points:**
+
 - **LCA in Binary Tree:** In a general binary tree, the LCA is found by recursively traversing the tree. If a node matches one of the target nodes, it’s returned as a potential LCA.
 - **LCA in Binary Search Tree (BST):** In a BST, the LCA can be found more efficiently by leveraging the properties of the BST. The search is guided by comparing node values.
 - **Applications:** LCA problems are often used in scenarios involving hierarchical data, such as organizational charts, genealogical trees, and file systems.
 
 **Problems:**
+
 - [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 - [Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/)
 - [Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/)
@@ -250,17 +259,10 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 }
 ```
 
-### Explanation:
+### Explanation
 
-•	Recursive Approach: The LCA is found by recursively searching the left and right subtrees. If both the left and right subtree contain one of the nodes, then the current node is the LCA. If only one subtree contains both nodes, that subtree contains the LCA.
-•	Edge Cases: If either p or q is the root, then the root itself is the LCA. If both nodes are found in the same subtree, the LCA is in that subtree.
-
-### Applications:
-
-•	Genealogical Trees: Finding the common ancestor of two individuals in a family tree.
-•	Organizational Hierarchies: Determining the nearest common manager of two employees.
-•	File Systems: Finding the common directory of two files in a file system.
-
+•Recursive Approach: The LCA is found by recursively searching the left and right subtrees. If both the left and right subtree contain one of the nodes, then the current node is the LCA. If only one subtree contains both nodes, that subtree contains the LCA.
+•Edge Cases: If either p or q is the root, then the root itself is the LCA. If both nodes are found in the same subtree, the LCA is in that subtree.
 
 ## Pattern 6: Rooted Path - Root to Leaf
 
@@ -268,11 +270,13 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 Rooted path problems involve finding and analyzing paths from the root node to leaf nodes in a binary tree. These problems often require calculating sums, checking for specific properties along the path, or generating all possible paths from the root to leaves.
 
 **Key Points:**
+
 - **Root to Leaf Paths:** These problems generally require traversing the tree to collect or analyze the data from the root to each leaf node.
 - **Path Sum Calculations:** Many problems involve calculating the sum of node values along a root-to-leaf path and checking against a target sum.
 - **Backtracking:** Often, backtracking is used to explore all possible paths from the root to the leaf nodes, making sure to revert changes to the path as you backtrack up the tree.
 
 **Problems:**
+
 - [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/)
 - [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/)
 - [Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/description/)
@@ -305,17 +309,17 @@ std::vector<std::string> binaryTreePaths(TreeNode* root) {
     return paths;
 }
 ```
-### Explanation:
 
-•	Recursive Traversal: The tree is traversed recursively, constructing a path string as you go from the root to each leaf node.
-•	Leaf Nodes: When a leaf node is reached (a node with no children), the constructed path is added to the list of paths.
-•	Backtracking: After exploring one path, the function backtracks to explore alternative paths from the root to other leaf nodes.
+### Explanation
 
-### Applications:
+•Recursive Traversal: The tree is traversed recursively, constructing a path string as you go from the root to each leaf node.
+•Leaf Nodes: When a leaf node is reached (a node with no children), the constructed path is added to the list of paths.
+•Backtracking: After exploring one path, the function backtracks to explore alternative paths from the root to other leaf nodes.
 
-•	Path Generation: Generating all paths from the root to leaf nodes in hierarchical structures like file systems or organizational charts.
-•	Sum Calculations: Problems that involve finding paths that sum up to a specific value, commonly used in financial or decision-making models.
+### Applications
 
+•Path Generation: Generating all paths from the root to leaf nodes in hierarchical structures like file systems or organizational charts.
+•Sum Calculations: Problems that involve finding paths that sum up to a specific value, commonly used in financial or decision-making models.
 
 ## Pattern 7: Tree Construction and Conversion
 
@@ -323,11 +327,13 @@ std::vector<std::string> binaryTreePaths(TreeNode* root) {
 Tree construction and conversion problems involve creating a binary tree from given traversal orders or converting a tree into a different structure. These problems often require a deep understanding of tree properties and traversal methods.
 
 **Key Points:**
+
 - **Tree Construction from Traversals:** These problems involve constructing a binary tree using given sequences of inorder, preorder, or postorder traversals.
 - **Tree Conversion:** These problems require transforming a binary tree into another structure, such as a linked list, string representation, or different binary tree form.
 - **Recursive Approach:** Tree construction typically involves recursive methods to correctly position nodes based on traversal orders.
 
 **Problems:**
+
 - [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)
 - [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/)
 - [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)
@@ -372,17 +378,17 @@ TreeNode* buildTree(std::vector<int>& preorder, std::vector<int>& inorder) {
 }
 
 ```
-### Explanation:
 
-•	Mapping Inorder Indices: A hash map is used to store the indices of values in the inorder traversal, allowing for quick lookups when dividing the tree into left and right subtrees.
-•	Recursive Construction: The tree is constructed recursively by determining the root node from the preorder traversal and dividing the inorder traversal into left and right subtrees.
-•	Handling Subtrees: The left and right subtrees are recursively constructed using the corresponding segments of the preorder and inorder traversals.
+### Explanation
 
-### Applications:
+•Mapping Inorder Indices: A hash map is used to store the indices of values in the inorder traversal, allowing for quick lookups when dividing the tree into left and right subtrees.
+•Recursive Construction: The tree is constructed recursively by determining the root node from the preorder traversal and dividing the inorder traversal into left and right subtrees.
+•Handling Subtrees: The left and right subtrees are recursively constructed using the corresponding segments of the preorder and inorder traversals.
 
-•	Tree Reconstruction: Building a binary tree from traversal data, which is common in parsing tasks, compilers, and data reconstruction.
-•	Tree Transformation: Converting trees into different forms, such as linked lists, strings, or arrays, for use in various algorithms and data processing tasks.
+### Applications
 
+•Tree Reconstruction: Building a binary tree from traversal data, which is common in parsing tasks, compilers, and data reconstruction.
+•Tree Transformation: Converting trees into different forms, such as linked lists, strings, or arrays, for use in various algorithms and data processing tasks.
 
 ## Pattern 8: Advanced Binary Tree Problems
 
@@ -390,12 +396,14 @@ TreeNode* buildTree(std::vector<int>& preorder, std::vector<int>& inorder) {
 Advanced binary tree problems often combine multiple concepts and require deep insights into the structure and properties of binary trees. These problems may involve complex operations such as finding the maximum path sum, serializing and deserializing trees, or placing binary tree cameras to monitor nodes. They typically require a mix of traversal techniques, dynamic programming, and advanced recursion.
 
 **Key Points:**
+
 - **Maximum Path Sum:** Finding the path in a binary tree where the sum of node values is the highest. This path may start and end at any node.
 - **Serialization and Deserialization:** Converting a binary tree into a format that can be stored or transmitted and then reconstructing the tree from that format.
 - **Binary Tree Cameras:** Placing cameras in the tree to monitor all nodes with the fewest number of cameras, usually involves dynamic programming or greedy approaches.
 - **Combination of Concepts:** Problems in this category often require combining basic tree operations with more advanced techniques like dynamic programming, backtracking, or even graph algorithms.
 
 **Problems:**
+
 - [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
 - [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
 - [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/)
@@ -427,15 +435,15 @@ int maxPathSum(TreeNode* root) {
 }
 ```
 
-### Explanation:
+### Explanation
 
-•	Recursive Helper Function: The helper function calculates the maximum gain from the left and right subtrees. It ensures that if a subtree’s gain is negative, it is discarded (i.e., treated as 0).
-•	Calculating the Path Sum: The path sum for the current node is calculated by adding the node’s value to the maximum gains from the left and right subtrees.
-•	Updating the Maximum Sum: The global maximum path sum is updated if the current path sum is higher than the previously recorded maximum.
-•	Return Value: The function returns the maximum gain that can be obtained by continuing the path through either the left or right subtree.
+•Recursive Helper Function: The helper function calculates the maximum gain from the left and right subtrees. It ensures that if a subtree’s gain is negative, it is discarded (i.e., treated as 0).
+•Calculating the Path Sum: The path sum for the current node is calculated by adding the node’s value to the maximum gains from the left and right subtrees.
+•Updating the Maximum Sum: The global maximum path sum is updated if the current path sum is higher than the previously recorded maximum.
+•Return Value: The function returns the maximum gain that can be obtained by continuing the path through either the left or right subtree.
 
-### Applications:
+### Applications
 
-•	Optimal Substructure Problems: Advanced binary tree problems often require finding optimal substructures, such as the maximum path sum that can be formed by combining multiple subtrees.
-•	Data Compression and Transmission: Serialization and deserialization are key in transmitting tree data over networks or storing it in a compressed format.
-•	Security and Monitoring: Placing cameras or other monitoring devices efficiently in hierarchical structures, ensuring minimal coverage overlaps.
+•Optimal Substructure Problems: Advanced binary tree problems often require finding optimal substructures, such as the maximum path sum that can be formed by combining multiple subtrees.
+•Data Compression and Transmission: Serialization and deserialization are key in transmitting tree data over networks or storing it in a compressed format.
+•Security and Monitoring: Placing cameras or other monitoring devices efficiently in hierarchical structures, ensuring minimal coverage overlaps.
