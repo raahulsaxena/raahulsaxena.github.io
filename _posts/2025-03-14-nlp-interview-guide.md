@@ -29,15 +29,6 @@ Example: pretrain a LLM on billions of words, and then feed in *what is the sent
 
 Let’s say we wanted to train a supervised model on sentiment analysis. In the past, we would have trained a supervised model on labeled examples (text/score pairs).
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
-    </div>
-</div>
-<div class="caption">
-    N-gram Language Model
-</div>
-
 <div class="row mt-3 justify-content-center">
     <div class="col-sm-6">
         {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
@@ -50,14 +41,15 @@ Let’s say we wanted to train a supervised model on sentiment analysis. In the 
 
 Nowadays, we take advantage of *transfer learning*:
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-2.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
     Transfer Learning
 </div>
+
 
 For n-gram models discussion, we focus on language modeling which form the core of ***Step 1: self-supervised pretraining.***
 
@@ -136,15 +128,14 @@ $$
 - N-gram models rely on the “bag-of-words” assumption.
 - Represent each word/n-gram as a vector of zeros with a single 1 identifying its index.
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/one-hot-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/one-hot-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
     One Hot Vector
 </div>
-
 
 - All words are equally similar, even though "movies" and "film" are semantically similar. There is no information sharing between different words. All words are orthogonal.
 - We ideally want a representation space in which words, phrases, sentences, etc. that are semantically similar have similar representations.
@@ -165,9 +156,9 @@ $$
 
 ## Neural Language Models
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
@@ -178,9 +169,9 @@ $$
 
 - Represent words with low-dimensional vectors called embeddings.
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-2.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-2.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
@@ -193,9 +184,9 @@ $$
 - Neural networks compose word embeddings into vectors for phrases, sentences, and documents. It uses word embeddings to find representations for phrases and sentences.
 
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-3.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-3.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
@@ -204,9 +195,9 @@ $$
 - Predict the next word from composed prefix representation.
 
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-4.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-4.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
@@ -215,13 +206,13 @@ $$
 ### Linear Layer (Feedforward Layer) on the Prefix Vector Representation
 
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/ll-1.png" class="img-fluid rounded z-depth-1" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/ll-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
-    Feedforward Layer
+    Feed-forward Layer
 </div>
 
 How to go from vector representation (Wx) to a probability distribution of the next word?
@@ -229,9 +220,9 @@ How to go from vector representation (Wx) to a probability distribution of the n
 - **Softmax Layer**: Converts a vector representation into a probability distribution over the entire vocabulary.
 
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/softmax-2.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/softmax-2.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
@@ -252,10 +243,9 @@ How to go from vector representation (Wx) to a probability distribution of the n
 
 ### A Fixed Window Neural Language Model
 
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/fixed-window-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/fixed-window-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
@@ -289,13 +279,13 @@ It is **sequential** and does the calculation from left to right [words of prefi
 - It also takes care of the Markov assumption. Theoretically, there is no limit to `t` in the RNN equation. We can keep on calculating `h(t)`.
 
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/rnn-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/rnn-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
-    Recurrent Neural Networks
+    Recurrent Neural Network
 </div>
 
 ### RNN Advantages:
@@ -323,9 +313,9 @@ It is **sequential** and does the calculation from left to right [words of prefi
 
 **Recap of Forward Propagation**
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/forward-1.png" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/forward-1.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Let's do Dynamic Programming
-date: 2025-03-13 15:09:00
+date: 2024-08-13 15:09:00
 description: The best dynamic programming study plan (incl. questions)
 tags: leetcode
 categories: sample-posts
