@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-mastering-knapsack-the-dynamic-programming-patterns-you-need-to-know",
+            },{id: "post-nlp-interview-guide-key-concepts-and-techniques",
+      
+        title: "NLP Interview Guide - Key Concepts and Techniques",
+      
+      description: "A comprehensive guide to understanding core NLP concepts and techniques, including supervised learning, self-supervised learning, language models, and more.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/nlp-interview-guide/";
+        
+      },
+    },{id: "post-mastering-knapsack-the-dynamic-programming-patterns-you-need-to-know",
       
         title: "Mastering Knapsack The Dynamic Programming Patterns You Need to Know",
       
