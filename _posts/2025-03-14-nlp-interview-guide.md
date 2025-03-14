@@ -29,7 +29,14 @@ Example: pretrain a LLM on billions of words, and then feed in *what is the sent
 
 Let’s say we wanted to train a supervised model on sentiment analysis. In the past, we would have trained a supervised model on labeled examples (text/score pairs).
 
-![n-gram-1.png](assets/img/nlp-guide/n-gram-1.png)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    N-gram Language Model
+</div>
 
 Nowadays, we take advantage of *transfer learning*:
 
@@ -37,15 +44,10 @@ Nowadays, we take advantage of *transfer learning*:
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/n-gram-2.png" class="img-fluid rounded z-depth-1" %}
-    </div>
 </div>
 <div class="caption">
-    N-gram-2
+    Transfer Learning
 </div>
-
-![image.png](attachment:9ba71f2f-86f5-434a-9d44-638bf16b7e77:image.png)
 
 For n-gram models discussion, we focus on language modeling which form the core of ***Step 1: self-supervised pretraining.***
 
@@ -55,7 +57,7 @@ For n-gram models discussion, we focus on language modeling which form the core 
     - P(i flew to the movies) <<<< P(i went to the movies)
 
 - **Speech Recognition**:
-    - P(i saw a van) >>>>> P(eyes awe of an)
+    - P(i saw a van) >>>> P(eyes awe of an)
 
 Language models allow us to assign this probability to the words. Example: in search bars.
 
@@ -124,7 +126,15 @@ $$
 - N-gram models rely on the “bag-of-words” assumption.
 - Represent each word/n-gram as a vector of zeros with a single 1 identifying its index.
 
-![image.png](attachment:57bd2b54-362b-4de2-bc90-582198b3015f:image.png)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/one-hot-1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    One Hot Vector
+</div>
+
 
 - All words are equally similar, even though "movies" and "film" are semantically similar. There is no information sharing between different words. All words are orthogonal.
 - We ideally want a representation space in which words, phrases, sentences, etc. that are semantically similar have similar representations.
@@ -145,33 +155,78 @@ $$
 
 ## Neural Language Models
 
-![image.png](attachment:6c0510a8-036b-4266-b279-e9c8575d8637:image.png)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Neural Language Model
+</div>
 
 ### Words as Basic Building Blocks
 
 - Represent words with low-dimensional vectors called embeddings.
 
-![image.png](attachment:d8834b1f-52c9-4d34-beb5-e570b0952277:image.png)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Words as Basic Building Blocks
+</div>
+
 
 - There is a loss of interpretation with these numbers. [Research field of explainability]
 - The word embeddings start completely randomly.
 - Neural networks compose word embeddings into vectors for phrases, sentences, and documents. It uses word embeddings to find representations for phrases and sentences.
 
-![image.png](attachment:5f357986-631c-4603-9256-a3e9398eae1f:image.png)
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-3.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+</div>
 
 - Predict the next word from composed prefix representation.
 
-![image.png](attachment:8390c1eb-9bff-4edf-bb0f-0de541cf1700:image.png)
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/nlm-4.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+</div>
 
 ### Linear Layer (Feedforward Layer) on the Prefix Vector Representation
 
-![image.png](attachment:e722fb35-11ab-48b0-8776-d9a905ef4f2a:image.png)
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/ll-1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Feedforward Layer
+</div>
 
 How to go from vector representation (Wx) to a probability distribution of the next word?
 
 - **Softmax Layer**: Converts a vector representation into a probability distribution over the entire vocabulary.
 
-![image.png](attachment:8e84e214-cfe6-4c44-b905-6e854ae7901e:image.png)
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/softmax-2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Softmax
+</div>
 
 ### Different Types of Composition Functions
 
@@ -187,7 +242,15 @@ How to go from vector representation (Wx) to a probability distribution of the n
 
 ### A Fixed Window Neural Language Model
 
-![image.png](attachment:a9b513ec-c92c-462e-bcdf-ae7fc2ecf9aa:image.png)
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/fixed-window-1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fixed Window Neural Language Model
+</div>
 
 - *ReLU* non-linearity = max(0, x). Others include *tanh* and *sigmoid*.
 - *f* in the above figure is a non-linear function. We want to model non-linear relationships, and therefore there is a need for non-linear functions.
@@ -215,7 +278,15 @@ It is **sequential** and does the calculation from left to right [words of prefi
 - It addresses the problem of not sharing the weights across the window.
 - It also takes care of the Markov assumption. Theoretically, there is no limit to `t` in the RNN equation. We can keep on calculating `h(t)`.
 
-![image.png](attachment:c886319c-d5e4-4f9d-b97e-308432d0a66d:image.png)
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/rnn-1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Recurrent Neural Networks
+</div>
 
 ### RNN Advantages:
 
@@ -242,7 +313,14 @@ It is **sequential** and does the calculation from left to right [words of prefi
 
 **Recap of Forward Propagation**
 
-![IMG_7014.jpg](attachment:ba85ee13-1744-491c-8216-fa658e413249:IMG_7014.jpg)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/nlp-guide/forward-1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Forward Propagation
+</div>
 
 ### Steps to Train a Neural Language Model
 
