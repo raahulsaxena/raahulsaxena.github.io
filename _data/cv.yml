@@ -7,12 +7,6 @@
       value: Amherst, Massachusetts, USA
     - name: Email
       value: rahulsaxena@umass.edu
-    - name: Website
-      value: "[raahulsaxena.github.io](http://raahulsaxena.github.io)"
-    - name: GitHub
-      value: "[github.com/raahulsaxena](https://github.com/raahulsaxena)"
-    - name: LinkedIn
-      value: "[linkedin.com/in/raahulsaxena](https://www.linkedin.com/in/raahulsaxena)"
     - name: Languages
       value: English, Hindi
 
@@ -89,19 +83,19 @@
 - title: Projects
   type: time_table
   contents:
-    - title: "[Advanced Camouflaged Object Detection](https://github.com/raahulsaxena/advanced-camouflage-detection)"
+    - title: Advanced Camouflaged Object Detection
       year: May 2024
       description:
         - Modified SINet with ResNet-18 to reduce computational load while retaining 90.76% accuracy.
         - Improved segmentation mask accuracy from 69.19% to 79.22% on COD10K dataset.
     
-    - title: "[Prompt Score](https://github.com/raahulsaxena/prompt_score)"
+    - title: Prompt Score
       year: Mar 2024
       description:
         - Developed a scoring system to evaluate the specificity of prompts for LLMs.
         - Fine-tuned LLaMA model with QLoRA, improving specificity scoring by 20%.
 
-    - title: "[Emotion-based Style Transfer](https://github.com/raahulsaxena/emotion-based-style-transfer)"
+    - title: Emotion-based Style Transfer
       year: Nov 2023
       description:
         - Used a 21-layer CNN for emotion classification, achieving 77.5% accuracy on Expression-in-the-Wild dataset.

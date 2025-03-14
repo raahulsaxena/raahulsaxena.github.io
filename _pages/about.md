@@ -8,9 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p></p>
-    <p>Amherst, MA 01002</p>
+  more_info: 
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -32,6 +30,8 @@ I'm a Master’s student in Computer Science at the University of Massachusetts 
 
 I have 4+ years of industry experience as a Software Engineer at Philips, where I worked on large-scale analytics applications.
 
-Currently, I'm a Graduate Student Researcher at Spotify, focusing on ML-driven solutions.
+Currently, I'm working as a Graduate Student Researcher at Spotify doing research on improving the performance of small language models on text-to-sql task.
+
+I'm actively seeking full-time Software Engineer / Machine Learning Engineer opportunities. If you're a recruiter or a hiring manager, feel free to contact me to discuss new opportunities.
 
 Contact: rahulsaxena ‘at’ umass ‘dot’ edu
