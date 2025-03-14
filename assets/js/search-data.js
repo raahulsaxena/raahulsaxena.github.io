@@ -249,7 +249,27 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "books-the-godfather",
+    },{id: "books-the-rational-male",
+          title: 'The Rational Male',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Rational_Male/";
+            },},{id: "books-anxious-people",
+          title: 'Anxious People',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/anxious_people/";
+            },},{id: "books-machine-learning-system-design",
+          title: 'Machine Learning System Design',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/ml_system_design/";
+            },},{id: "books-",
+          title: '',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/system-design-alex-xu-1/";
+            },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
