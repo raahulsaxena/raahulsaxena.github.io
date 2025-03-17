@@ -154,8 +154,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/ml_system_design/";
-            },},{id: "books-",
-          title: '',
+            },},{id: "books-system-design-interview-an-insider-s-guide-2nd-edition",
+          title: 'System Design Interview An Insider’s Guide 2nd Edition',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/system-design-alex-xu-1/";
