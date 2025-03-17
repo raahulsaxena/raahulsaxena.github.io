@@ -30,7 +30,7 @@ featured: false
     - The last level has all nodes as left as possible.
 - **Perfect Binary Tree**: All leaf nodes are at the same level.
 - **Balanced Binary Tree**: Height at maximum of log(N) where N is the number of nodes.
-- **Degenerate Binary Tree**: Essentially a linked list.
+- **Degenerate Binary Tree**: Essentially a linked list.  
 
 ## **Binary Tree Representation in C++**
 
@@ -68,16 +68,16 @@ Initializing it in main function looks as follows:
 
 ```cpp
 int main(){
-	
-		struct Node* root = new Node(1);
-		root->left = new Node(2);
-		root->right = new Node(3);
-		root->left->right = new Node(5)
+
+    struct Node* root = new Node(1);
+    root->left = new Node(2);
+    root->right = new Node(3);
+    root->left->right = new Node(5)
 
 }
-```
+```  
 
-# **Traversal Techniques**
+## **Traversal Techniques**
 
 ---
 
@@ -97,9 +97,9 @@ int main(){
     Types of Traversals
 </div>
 
-Go the subtree of each node and apply the same order to get the traversal for the whole tree
+Go the subtree of each node and apply the same order to get the traversal for the whole tree  
 
-# **Preorder Traversal**
+## **Preorder Traversal**
 
 ---
 
@@ -112,26 +112,26 @@ Go the subtree of each node and apply the same order to get the traversal for th
     Preorder Traversal
 </div>
 
-Implementation of preorder traversal in C++
+### Implementation of preorder traversal in C++
 
 ```cpp
 
 void preorder(node){
 
-		if(node == NULL) return;
-		
-		cout << node->data << endl;
-		
-		preorder(node->left);
-		
-		preorder(node->right);
-		
+    if(node == NULL) return;
+    
+    cout << node->data << endl;
+    
+    preorder(node->left);
+    
+    preorder(node->right);
+
 }
 ```
 
 Time complexity: O(N), Space complexity: O(N)
 
-Iterative Preorder traversal in C++ (1 stack required) [TOUGH INTUITION]
+### Iterative Preorder traversal in C++ (1 stack required) [TOUGH INTUITION]
 
 - Push the root of the tree into the stack.
 - Now, while the stack is non empty,
@@ -189,7 +189,7 @@ public:
         
     }
 };
-```
+```  
 
 ## **Inorder Traversal**
 
@@ -204,26 +204,26 @@ public:
     Inorder Traversal
 </div>
 
-Implementation of Inorder traversal in C++
+### Implementation of Inorder traversal in C++
 
 ```cpp
 
 void inorder(node){
 
-		if(node == NULL) return;
-				
-		inorder(node->left);
-		
-		cout << node->data << endl;
+    if(node == NULL) return;
+            
+    inorder(node->left);
+    
+    cout << node->data << endl;
 
-		inorder(node->right);
-		
+    inorder(node->right);
+    
 }
 ```
 
 Time complexity: O(N), Space complexity: O(N)
 
-Iterative Inorder Traversal in C++ [1 Stack] [TOUGH INTUITION]
+### Iterative Inorder Traversal in C++ [1 Stack] [TOUGH INTUITION]
 
 - Mark the curr_node as root
 - While the curr_node is not empty
@@ -293,9 +293,9 @@ public:
         
     }
 };
-```
+```  
 
-# **Postorder Traversal**
+## **Postorder Traversal**
 
 ---
 
@@ -309,25 +309,25 @@ public:
     Postorder Traversal
 </div>
 
-Implementation of postorder traversal in C++
+### Implementation of postorder traversal in C++
 
 ```cpp
 
 void postorder(node){
 
-		if(node == NULL) return;
-				
-		postorder(node->left);
+    if(node == NULL) return;
+            
+    postorder(node->left);
 
-		postorder(node->right);
-		
-		cout << node->data << endl;
+    postorder(node->right);
+    
+    cout << node->data << endl;
 }
 ```
 
 Time complexity: O(N), Space complexity: O(N)
 
-Iterative Postorder traversal in C++ (2 stacks required) [TOUGH INTUITION]
+### Iterative Postorder traversal in C++ (2 stacks required) [TOUGH INTUITION]
 
 - Maintain two stacks: st1, st2
 - Add the root node to st1
@@ -396,9 +396,9 @@ public:
         
     }
 };
-```
+```  
 
-# **Level Order Traversal**
+## **Level Order Traversal**
 
 ---
 
@@ -411,7 +411,7 @@ public:
     Level Order Traversal (Breadth First)
 </div>
 
-Implementation of postorder traversal in C++
+### Implementation of level traversal in C++
 
 - Simple BFS pattern.
 - **IMPORTANT**: You need to maintain a variable queue_size that “snapshots” current queue size before processing each level’s elements.
@@ -471,7 +471,7 @@ public:
 };
 ```
 
-Zigzag Level Order Traversal
+### Zigzag Level Order Traversal
 
 - There is a way to follow the BFS pattern for Level order traversal, and just use a built-in function to reverse each level before adding it to the final result.
 - We can skip the reversing if we can maintain a position variable that specifies from which position we should start filling up each level’s elements.
