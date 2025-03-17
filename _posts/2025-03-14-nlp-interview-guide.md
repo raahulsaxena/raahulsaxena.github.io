@@ -72,8 +72,8 @@ Language models allow us to assign this probability to the words. Example: in se
 
 #### The Chain Rule
 
-**Conditional Probability**:
----
+**Conditional Probability:**
+
 $$
 P(B | A) = \frac{P(A, B)}{P(A)} 
 $$
@@ -304,6 +304,7 @@ It is **sequential** and does the calculation from left to right [words of prefi
 - In practice, difficult to access information from many steps back.
 
 ## Neural Language Models [Backpropagation]
+---
 
 ### Training Neural Language Models
 

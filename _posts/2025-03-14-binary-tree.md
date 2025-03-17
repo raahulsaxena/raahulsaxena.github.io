@@ -71,51 +71,75 @@ Level Order Traversal, also known as Breadth-First Search (BFS) for trees, invol
 
 - Use a queue to keep track of nodes at the current level.
 - Process nodes level by level, adding their children to the queue.
-- This approach is particularly useful for problems that involve hierarchical data.
 
 **Problems:**
 
 - [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
 - [Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/)
-- [Vertical Order Traversal](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/)
-- [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)
 
 **Code Example (Level Order Traversal):**
 
 ```cpp
 // Level Order Traversal in C++
-#include <vector>
-#include <queue>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 
-std::vector<std::vector<int>> levelOrder(TreeNode* root) {
-    std::vector<std::vector<int>> result;
-    if (!root) return result;
-    
-    std::queue<TreeNode*> q;
-    q.push(root);
-    
-    while (!q.empty()) {
-        int size = q.size();
-        std::vector<int> level;
-        for (int i = 0; i < size; ++i) {
-            TreeNode* node = q.front();
-            q.pop();
-            level.push_back(node->val);
-            if (node->left) q.push(node->left);
-            if (node->right) q.push(node->right);
+class Solution {
+public:
+    vector<vector<int>> levelOrder(TreeNode* root) {
+
+        vector<vector<int>> res;
+        if(root == NULL) return res;
+
+        queue<TreeNode*> q;
+        q.push(root);
+        int level = 1;
+
+        while(!q.empty()){
+            
+            vector<int> curr_level;
+            int curr_q_size = q.size();
+
+            for(int i = 0; i < curr_q_size; i++){
+
+                TreeNode* curr_node = q.front();
+                curr_level.push_back(curr_node->val);
+                q.pop();
+
+                for(TreeNode* n: {curr_node->left, curr_node->right}){
+                    if(n != NULL) q.push(n);
+                    
+                }
+
+                level++;
+
+            }
+
+            res.push_back(curr_level);
+
         }
-        result.push_back(level);
+
+        return res;
+         
     }
-    
-    return result;
-}
+};
+
 ```
 
 ### Explanation
 
-•A queue is used to store nodes of the tree.
-•The size of the queue at each level is captured to determine the number of nodes on that level.
-•Nodes are processed one level at a time, and their children are added to the queue for the next level.
+• A queue is used to store nodes of the tree.
+• **IMPORTANT:** The size of the queue at each level is captured to determine the number of nodes on that level.
+• Nodes are processed one level at a time, and their children are added to the queue for the next level.
 
 ## Pattern 3: Views of Binary Tree
 
@@ -404,6 +428,7 @@ Advanced binary tree problems often combine multiple concepts and require deep i
 
 **Problems:**
 
+- [Vertical Order Traversal](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/)
 - [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
 - [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
 - [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/)
