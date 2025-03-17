@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-nlp-interview-guide-key-concepts-and-techniques",
+            },{id: "post-binary-tree-introduction-and-important-traversals",
+      
+        title: "Binary Tree Introduction and Important Traversals",
+      
+      description: "A comprehensive guide to understanding the types of binary trees and their important traversals for interview preparation.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/tree-introduction-traversals/";
+        
+      },
+    },{id: "post-nlp-interview-guide-key-concepts-and-techniques",
       
         title: "NLP Interview Guide - Key Concepts and Techniques",
       
