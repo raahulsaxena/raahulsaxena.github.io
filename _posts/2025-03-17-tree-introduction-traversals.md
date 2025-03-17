@@ -19,7 +19,7 @@ featured: false
     </div>
 </div>
 <div class="caption">
-    One Hot Vector
+    Binary Tree Introduction
 </div>
 
 - A node can have only two children → Binary Tree
@@ -42,7 +42,7 @@ featured: false
     </div>
 </div>
 <div class="caption">
-    One Hot Vector
+    Tree Representation in C++
 </div>
 
 Binary tree can be represented in code as follows:
@@ -94,7 +94,7 @@ int main(){
     </div>
 </div>
 <div class="caption">
-    One Hot Vector
+    Types of Traversals
 </div>
 
 Go the subtree of each node and apply the same order to get the traversal for the whole tree
@@ -109,7 +109,7 @@ Go the subtree of each node and apply the same order to get the traversal for th
     </div>
 </div>
 <div class="caption">
-    One Hot Vector
+    Preorder Traversal
 </div>
 
 Implementation of preorder traversal in C++
@@ -201,7 +201,7 @@ public:
     </div>
 </div>
 <div class="caption">
-    One Hot Vector
+    Inorder Traversal
 </div>
 
 Implementation of Inorder traversal in C++
@@ -306,7 +306,7 @@ public:
     </div>
 </div>
 <div class="caption">
-    One Hot Vector
+    Postorder Traversal
 </div>
 
 Implementation of postorder traversal in C++
@@ -408,7 +408,7 @@ public:
     </div>
 </div>
 <div class="caption">
-    One Hot Vector
+    Level Order Traversal (Breadth First)
 </div>
 
 Implementation of postorder traversal in C++
