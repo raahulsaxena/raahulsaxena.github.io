@@ -19,6 +19,17 @@ strong {
   color: var(--global-text-color);
 }
 
+body {
+  font-family: 'Figtree', sans-serif;
+}
+h2 {
+  font-family: 'Figtree ', sans-serif;
+}
+post-header{
+  font-family: 'Figtree ', sans-serif;
+  font-size: 1.0rem;
+}
+// added the font-family
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -198,7 +209,7 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: "Figtree", sans-serif;
 
     p {
       display: inline-block;
@@ -248,6 +259,7 @@ ul.task-list input[type="checkbox"] {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  font-family: "Figtree", sans-serif;
 }
 
 .navbar .dropdown-menu {
