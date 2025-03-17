@@ -131,7 +131,7 @@ void preorder(node){
 
 Time complexity: O(N), Space complexity: O(N)
 
-### Iterative Preorder traversal in C++ (1 stack required) [TOUGH INTUITION]
+### Iterative Preorder traversal in C++ [1 stack required]
 
 - Push the root of the tree into the stack.
 - Now, while the stack is non empty,
@@ -223,7 +223,7 @@ void inorder(node){
 
 Time complexity: O(N), Space complexity: O(N)
 
-### Iterative Inorder Traversal in C++ [1 Stack] [TOUGH INTUITION]
+### Iterative Inorder Traversal in C++ [1 Stack]
 
 - Mark the curr_node as root
 - While the curr_node is not empty
@@ -327,7 +327,7 @@ void postorder(node){
 
 Time complexity: O(N), Space complexity: O(N)
 
-### Iterative Postorder traversal in C++ (2 stacks required) [TOUGH INTUITION]
+### Iterative Postorder traversal in C++ [2 stacks required]
 
 - Maintain two stacks: st1, st2
 - Add the root node to st1
@@ -397,6 +397,9 @@ public:
     }
 };
 ```  
+
+<br>
+
 
 ## **Level Order Traversal**
 
