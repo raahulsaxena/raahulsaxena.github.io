@@ -105,7 +105,7 @@ Go the subtree of each node and apply the same order to get the traversal for th
 
 <div class="row mt-3 justify-content-center">
     <div class="col-sm-6">
-        {% include figure.liquid loading="eager" path="assets/img/tree-introduction/tree-4.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
+        {% include figure.liquid loading="eager" path="assets/img/tree-introduction/tree-4.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
@@ -197,7 +197,7 @@ public:
 
 <div class="row mt-3 justify-content-center">
     <div class="col-sm-6">
-        {% include figure.liquid loading="eager" path="assets/img/tree-introduction/tree-5.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
+        {% include figure.liquid loading="eager" path="assets/img/tree-introduction/tree-5.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
@@ -302,7 +302,7 @@ public:
 
 <div class="row mt-3 justify-content-center">
     <div class="col-sm-6">
-        {% include figure.liquid loading="eager" path="assets/img/tree-introduction/tree-6.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
+        {% include figure.liquid loading="eager" path="assets/img/tree-introduction/tree-6.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" %}
     </div>
 </div>
 <div class="caption">
