@@ -9,7 +9,7 @@ featured: false
 ---
 
 
-# Introduction to Trees | Types of Trees
+## **Introduction to Trees | Types of Trees**
 
 ---
 
@@ -32,7 +32,7 @@ featured: false
 - **Balanced Binary Tree**: Height at maximum of log(N) where N is the number of nodes.
 - **Degenerate Binary Tree**: Essentially a linked list.
 
-# Binary Tree Representation in C++
+## **Binary Tree Representation in C++**
 
 ---
 
@@ -50,17 +50,17 @@ Binary tree can be represented in code as follows:
 ```cpp
 struct Node{
 
-		int data;
-		struct Node* left;
-		struct Node* right;
-		
-		Node(int val){
-		
-				data = val;
-				left = right = NULL;
-				
-		}
-		
+    int data;
+    struct Node* left;
+    struct Node* right;
+    
+    Node(int val){
+    
+        data = val;
+        left = right = NULL;
+            
+    }
+
 }
 ```
 
@@ -77,7 +77,7 @@ int main(){
 }
 ```
 
-# Traversal Techniques
+# **Traversal Techniques**
 
 ---
 
@@ -99,7 +99,7 @@ int main(){
 
 Go the subtree of each node and apply the same order to get the traversal for the whole tree
 
-# Preorder Traversal
+# **Preorder Traversal**
 
 ---
 
@@ -191,7 +191,7 @@ public:
 };
 ```
 
-## Inorder Traversal
+## **Inorder Traversal**
 
 ---
 
@@ -295,7 +295,7 @@ public:
 };
 ```
 
-# Postorder Traversal
+# **Postorder Traversal**
 
 ---
 

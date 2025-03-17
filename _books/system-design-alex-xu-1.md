@@ -1,6 +1,6 @@
 ---
 layout: book-review
-title: System Design Interview: An Insider’s Guide 2nd Edition
+title: System Design Interview An Insider’s Guide 2nd Edition
 author: Alex Xu
 cover: assets/img/book_covers/alex-xu-1.png
 isbn: 1942878763
