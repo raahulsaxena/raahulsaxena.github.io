@@ -32,6 +32,8 @@ featured: false
 - **Balanced Binary Tree**: Height at maximum of log(N) where N is the number of nodes.
 - **Degenerate Binary Tree**: Essentially a linked list.  
 
+<br>
+
 ## **Binary Tree Representation in C++**
 
 ---
@@ -77,6 +79,8 @@ int main(){
 }
 ```  
 
+<br>
+
 ## **Traversal Techniques**
 
 ---
@@ -98,6 +102,8 @@ int main(){
 </div>
 
 Go the subtree of each node and apply the same order to get the traversal for the whole tree  
+
+<br>
 
 ## **Preorder Traversal**
 
@@ -190,6 +196,8 @@ public:
     }
 };
 ```  
+
+<br>
 
 ## **Inorder Traversal**
 
@@ -294,6 +302,8 @@ public:
     }
 };
 ```  
+
+<br>
 
 ## **Postorder Traversal**
 
