@@ -95,6 +95,17 @@ ninja.data = [{
           window.location.href = "/blog/2024/binary-tree/";
         
       },
+    },{id: "post-topological-sort",
+      
+        title: "Topological Sort",
+      
+      description: "Explanation of TopologicalSort",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/graphs-dfs-bfs/";
+        
+      },
     },{id: "post-graph-algorithms-deep-dive-key-concepts-and-techniques",
       
         title: "Graph Algorithms Deep Dive Key Concepts and Techniques",
@@ -154,6 +165,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/ml_system_design/";
+            },},{id: "books-principles",
+          title: 'Principles',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/principles/";
             },},{id: "books-system-design-interview-an-insider-s-guide-2nd-edition",
           title: 'System Design Interview An Insider’s Guide 2nd Edition',
           description: "",
