@@ -86,7 +86,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name:  The Algorithmic Mind # blog_name will be displayed in your blog page
-blog_description: It isn't what you know that gets you in trouble, it's what you do know!
+blog_description: It isn’t what you don’t know that gets you in trouble; it’s what you do know!
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
