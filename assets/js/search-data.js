@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-binary-tree-introduction-and-important-traversals",
+            },{id: "post-let-39-s-synchronize-our-threads",
+      
+        title: "Let&#39;s synchronize our threads",
+      
+      description: "Basics of thread synchronization in C++",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/thread-synchronization/";
+        
+      },
+    },{id: "post-binary-tree-introduction-and-important-traversals",
       
         title: "Binary Tree Introduction and Important Traversals",
       
