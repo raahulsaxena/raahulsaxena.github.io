@@ -5,7 +5,7 @@ date: 2025-04-01
 description: "Exploring how Tries efficiently handle autocomplete, spell-checking, and pattern matching."
 tags: [data structures, algorithms, trie, text processing]
 categories: [computer science]
-featured: true
+featured: false
 ---
 
 ## What Makes Tries Special?
@@ -75,55 +75,80 @@ Tries are powerful, but they’re not a one-size-fits-all solution. Their bigges
 ---
 
 ```cpp
-#include <iostream>
-#include <unordered_map>
-using namespace std;
+class TrieNode{
 
-class TrieNode {
 public:
     unordered_map<char, TrieNode*> children;
+
     bool isEndOfWord;
 
-    TrieNode() : isEndOfWord(false) {}
+    TrieNode() {
+        isEndOfWord = false;
+    }
+
 };
+
 
 class Trie {
+
 private:
     TrieNode* root;
-
 public:
-    Trie() { root = new TrieNode(); }
-    
-    void insert(const string &word) {
-        TrieNode* node = root;
-        for (char c : word) {
-            if (!node->children.count(c)) {
-                node->children[c] = new TrieNode();
-            }
-            node = node->children[c];
-        }
-        node->isEndOfWord = true;
+    Trie() {
+        
+        root = new TrieNode();
     }
     
-    bool search(const string &word) {
+    void insert(string word) {
+
         TrieNode* node = root;
-        for (char c : word) {
-            if (!node->children.count(c)) {
+
+        for(char ch: word){
+            if(node->children.find(ch) == node->children.end()){
+                node->children[ch] = new TrieNode();
+            }
+
+            node = node->children[ch];
+        }
+
+        node->isEndOfWord = true;
+        
+    }
+    
+    bool search(string word) {
+
+        TrieNode* node = root;
+
+        for(char ch: word){
+
+            if(node->children.find(ch) == node->children.end()){
                 return false;
             }
-            node = node->children[c];
+            
+            node = node->children[ch];
+
         }
+
         return node->isEndOfWord;
+        
+    }
+    
+    bool startsWith(string prefix) {
+
+        TrieNode* node = root;
+
+        for(char ch: prefix){
+
+            if(node->children.find(ch) == node->children.end()) return false;
+
+            node = node->children[ch];
+
+        }
+
+        return true;
+        
     }
 };
-
-int main() {
-    Trie trie;
-    trie.insert("apple");
-    cout << trie.search("apple") << endl; // 1 (true)
-    cout << trie.search("app") << endl;   // 0 (false)
-    return 0;
-}
 ```
 
 ## The Verdict
