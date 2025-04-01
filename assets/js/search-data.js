@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-let-39-s-synchronize-our-threads",
+            },{id: "post-tree-traversals-in-o-1-space-let-39-s-do-morris-traversals",
+      
+        title: "Tree traversals in O(1) space? Let&#39;s do Morris Traversals",
+      
+      description: "Basics of thread synchronization in C++",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/morris-inorder-traversal/";
+        
+      },
+    },{id: "post-let-39-s-synchronize-our-threads",
       
         title: "Let&#39;s synchronize our threads",
       
