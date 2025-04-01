@@ -42,10 +42,11 @@ Here's a simple example:
      a     e     p
     /       |      \
    t       e        p
-  (end)   (end)     e
-                     \
-                      n
-                     (end)
+  (end)   (end)      \
+                      l
+                       \
+                        e
+                        (end)
 ```
 
 This Trie stores the words "cat," "bee," and "app," along with "apple." Notice how prefixes are shared? That’s where the magic happens!
