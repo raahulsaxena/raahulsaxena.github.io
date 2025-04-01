@@ -23,7 +23,7 @@ That’s exactly what **Morris Traversal** does. It lets us traverse a binary tr
 
 Normally, when we do an **inorder traversal** (Left → Root → Right), we use recursion or a stack to remember our path. But Morris Traversal takes a different approach—it **modifies** the tree temporarily by creating **threaded links**. These links act as breadcrumbs, guiding us back when needed. Here’s how it works:
 
-### Algorithm Breakdown:
+### Algorithm Breakdown
 
 ---
 
@@ -41,7 +41,7 @@ Normally, when we do an **inorder traversal** (Left → Root → Right), we use 
 
 By following this method, every node is visited **exactly twice**, ensuring an efficient traversal.
 
-## Show Me the Code!
+## Show Me the Code
 
 ---
 
@@ -104,7 +104,7 @@ This trick is particularly useful when:
 
 Yes! You can adapt Morris Traversal for **preorder traversal** as well. The only difference is that you process the node **before** moving left instead of after restoring the thread.
 
-### Morris Preorder Traversal (C++):
+### Morris Preorder Traversal (C++)
 
 ---
 

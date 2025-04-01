@@ -41,21 +41,23 @@ Here's a simple example:
 This Trie stores the words "cat," "bee," and "app," along with "apple." Notice how prefixes are shared? That’s where the magic happens!
 
 ## Why Tries Shine in Text Processing
+
+---
+
 Tries are particularly useful when dealing with large sets of words or searching for common prefixes. Here are some practical applications:
 
-### 1. **Autocomplete & Predictive Text**
-When you type “app,” a Trie can instantly suggest “apple” and “application” by following the stored characters.
+1. **Autocomplete & Predictive Text**: When you type “app,” a Trie can instantly suggest “apple” and “application” by following the stored characters.
 
-### 2. **Spell Checking & Correction**
-Tries make it easy to find words that are just one or two edits away, helping autocorrect do its job seamlessly.
+2. **Spell Checking & Correction**: Tries make it easy to find words that are just one or two edits away, helping autocorrect do its job seamlessly.
 
-### 3. **Pattern Matching**
-Need to find all words that start with “pre”? A Trie can fetch them in a flash, no need for expensive regex operations.
+3. **Pattern Matching**: Need to find all words that start with “pre”? A Trie can fetch them in a flash, no need for expensive regex operations.
 
-### 4. **IP Routing**
-Tries aren’t just for words—they’re also used in network routing tables for rapid IP lookup.
+4. **IP Routing** : Tries aren’t just for words—they’re also used in network routing tables for rapid IP lookup.
 
 ## But Wait, Are Tries Always the Best Choice?
+
+---
+
 Tries are powerful, but they’re not a one-size-fits-all solution. Their biggest downside? Memory usage. Since each character needs its own node, Tries can become memory-hungry compared to hash-based approaches. If space is a concern, alternatives like Ternary Search Trees or compressed Tries (like Radix Trees) might be worth considering.
 
 ## A Simple Trie Implementation in C++
