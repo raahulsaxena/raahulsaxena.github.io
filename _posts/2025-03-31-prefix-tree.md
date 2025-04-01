@@ -41,7 +41,7 @@ Here's a simple example:
       /    |    \
      a     e     p
     /       |      \
-   t       e        p
+   t       e        p (end)
   (end)   (end)      \
                       l
                        \
