@@ -20,6 +20,16 @@ A Trie (pronounced "try") is like a well-organized filing system for words. Unli
 
 ---
 
+
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6">
+        {% include figure.liquid loading="eager" path="assets/img/tree-introduction/Trie.png" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;" %}
+    </div>
+</div>
+<div class="caption">
+    A Trie
+</div>
+
 Think of a Trie as a tree where each node represents a character. Words branch out as you traverse the structure, letter by letter. At the end of a valid word, a special marker (often a boolean flag) indicates completion.
 
 Here's a simple example:

@@ -21,6 +21,15 @@ That’s exactly what **Morris Traversal** does. It lets us traverse a binary tr
 
 ---
 
+<div class="row mt-3 justify-content-center">
+    <div class="col-12">
+        {% include figure.liquid loading="eager" path="assets/img/tree-introduction/morris-traversal-1.png" style="max-width: 100%; width: 100%; display: block; margin-left: auto; margin-right: auto;" %}
+    </div>
+</div>
+<div class="caption">
+    Binary Tree Threading
+</div>
+
 Normally, when we do an **inorder traversal** (Left → Root → Right), we use recursion or a stack to remember our path. But Morris Traversal takes a different approach—it **modifies** the tree temporarily by creating **threaded links**. These links act as breadcrumbs, guiding us back when needed. Here’s how it works:
 
 ### Algorithm Breakdown
