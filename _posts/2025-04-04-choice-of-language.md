@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Language Dilemma: Java vs C++ (and the Ever-Luring Python)
+title: The Language Dilemma, Java vs C++ (and the Ever-Luring Python)
 date: 2025-04-04 15:09:00
 description: A personal journey of switching from Java to C++ for problem-solving and the constant temptation of Python.
 tags: [java, c++, python]
