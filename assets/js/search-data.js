@@ -51,18 +51,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-",
-      
-        title: "",
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/2025-04-04-choice-of-language/";
-        
-      },
-    },{id: "post-need-a-tree-of-chars-for-efficient-prefix-search-try-tries",
+            },{id: "post-need-a-tree-of-chars-for-efficient-prefix-search-try-tries",
       
         title: "Need a tree of chars for efficient prefix search? Try Tries!",
       
